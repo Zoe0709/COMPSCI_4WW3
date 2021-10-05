@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Finding Museum | Search Results</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+    <!-- google material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class='appbar'>
+            <ul class='appbar'>
+                <li>
+                    <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+                <li>
+                    <a class='current' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+                <li>
+                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+                <li>
+                    <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+                <li>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                </li>
+            </ul>
+            <a href="#" id="dropdown">Finding Museum</a>
+        </nav>
+    </header>
+
+    <!-- main content -->
+
+    <main class='main-section'>
+        <div class='content'>
+            <h1 class='heading'>Search Results</h1>
+            <!-- <div id='map'></div> -->
+            <div class='result-container'>
+                <a href='./screenshots/search_sample.jpeg'><img src='./screenshots/search_sample.jpeg' alt="Search Results"></a>
+                <table class='result-table center'>
+                    <tr>
+                        <th>Museum</th>
+                        <th>Rating</th>
+                        <th>Address</th>
+                        <th>Postal Code</th>
+                    </tr>
+                    <tr>
+                        <td><a href='./individual_sample.html'>Aga Khan Museum</a></td>
+                        <td><a href='./individual_sample.html'>4.6 Stars</a></td>
+                        <td><a href='./individual_sample.html'>77 Wynford Drive, Toronto, Ontario</a></td>
+                        <td><a href='./individual_sample.html'>M3C 1K1</a></td>
+
+                    </tr>
+                    <tr>
+                        <td><a href='./individual_sample.html'>Bata Shoe Museum</a></td>
+                        <td><a href='./individual_sample.html'>4.3 Stars</a></td>
+                        <td><a href='./individual_sample.html'>327 Bloor St W, Toronto, Ontario</a></td>
+                        <td><a href='./individual_sample.html'>M5S 1W7</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href='./individual_sample.html'>Canadian Canoe Museum</a></td>
+                        <td><a href='./individual_sample.html'>4.1 Stars</a></td>
+                        <td><a href='./individual_sample.html'>910 Monaghan Rd, Peterborough, Ontario</a></td>
+                        <td><a href='./individual_sample.html'>K9J 5K4</a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+<!-- <script src='./js/menu.js'></script>
+<script src='./js/results.js'></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDreWvJpmH5AKUZS-1IEVEotY78DG3Z8Fk&callback=initMap">
+</script> -->
+
+</html>

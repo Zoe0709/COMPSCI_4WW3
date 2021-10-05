@@ -1,0 +1,289 @@
+body {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0;
+    background: #090d32;
+}
+
+table {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+  
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+td a {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+tr:hover {
+    background: rgba(94, 223, 255, 0.2);
+    cursor: pointer;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.result-table {
+    max-width: 45%;
+    max-height: 50%;
+    overflow: scroll;
+}
+
+.content {
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.arena-info {
+    float: left;
+    text-align: left;
+    margin-right: 16px;
+    max-width: 35%;
+    max-height: 75%;
+    color: #fff;
+}
+
+.main-section {
+    width: 100%;
+    
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.main-section .content .home {
+    margin-top: 35vh;
+}
+
+#main-header {
+    font-weight: 400;
+    font-size: 38px;
+    color: #00FFFF;
+    text-align: center;
+    margin: 4px;
+}
+
+#secondary-header {
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.12rem;
+}
+
+.heading {
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    text-align: left;
+    margin: 16px;
+}
+
+#location-heading {
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 2px;
+    margin-top: 6px;
+}
+
+.subheading-b {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    margin: 16px;
+    margin-top: 16px;
+}
+
+.subheading-n {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    color: #fff;
+    text-align: left;
+    margin: 16px;
+    margin-top: 16px;
+}
+
+i {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+.map {
+    box-shadow: 0px 1px 4px 0px black;
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.formentry {
+    text-align: left;
+    color: #fff;
+}
+
+.legend {
+    font-weight: bold;
+}
+
+.locationbtn {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+#map {
+    height: 60vh;
+    width: 100%;
+    margin: 16px;
+}
+
+/* navbar */
+nav {
+    height: 55px;
+    width: 100%;
+    background-color: #070b24;
+    position: fixed;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0px;
+    color: #BBB8B2;
+}
+
+nav a:hover {
+    color: #00FFFF;
+    cursor: pointer;
+}
+
+nav a:active {
+    color: #00FFFF;
+}
+
+nav a#dropdown {
+    display: none;
+}
+
+.current {
+    color: #00FFFF;
+}
+
+.account {
+    float: right;
+}
+/* end navbar */
+
+/* Smaller sized screens */
+
+@media screen and (max-width: 600px) {
+    .content {
+        padding: 0 2rem;
+    }
+
+    nav {
+        height: auto;
+        border-bottom: 0;
+        z-index: 9999 !important;
+    }
+
+    nav ul {
+        display: none;
+        height: auto;
+    }
+
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #070b24;
+        color: #BBB8B2;
+    }
+
+    nav a:hover {
+        color: #00FFFF;
+        cursor: pointer;
+    }
+
+    nav a:active {
+        color: #00FFFF;
+    }
+
+    nav a#dropdown:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+
+    nav a#dropdown {
+        display: block;
+        background: #070b24;
+        color: #BBB8B2;
+        width: 100%;
+        position: relative;
+    }
+
+    .appbar:before, .appbar:after {
+        content: "";
+        display: table;
+    }
+
+    .appbar:after {
+        clear: both;
+    }
+
+    .appbar {
+        zoom: 1;
+    }
+}
+
+.footer {
+    background: #070b24;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}

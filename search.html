@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Finding Museum | Search</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+    <!-- google material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class='appbar'>
+            <ul class='appbar'>
+                <li>
+                    <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+                <li>
+                    <a class='current' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+                <li>
+                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+                <li>
+                    <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+                <li>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                </li>
+            </ul>
+            <a href="#" id="dropdown">Finding Museum</a>
+        </nav>
+    </header>
+
+    <!-- main content -->
+
+    <main class='main-section'>
+        <div class='content'>
+            <h1 class='heading'>Search for Museums</h1>
+            <!-- <form action='./results_sample.html' class='formentry'> -->
+                <fieldset class='formentry'>
+                    <legend class='legend'>YOU CAN ...</legend>
+                    <form class="wrapper" style="margin-top: -2em;">
+                        <!-- <form action='./results_sample.html' class='formentry'> -->
+                        <div class="title">
+                            SEARCH BY NAME
+                        </div>
+                        <div class="form">
+                            <div class="inputfield">
+                                <label>Name:</label>
+                                <input type="text" name="museumname" class="input" placeholder='Museum name here'>
+                                <input type="submit" value="Search" class="btn" onclick='submitForm()'>
+                            </div>         
+                        </div>
+                    </form>
+                    <form class="wrapper" >
+                        <!-- <form action='./results_sample.html' class='formentry'> -->
+                        <div class="title">
+                            SEARCH BY RATING
+                        </div>
+                        <div class="form">
+                            <div class="inputfield">
+                                <label>Rating:</label>
+                                <div class="custom_select" name='rating'>
+                                    <select>
+                                    <option value="5">5 stars</option>
+                                    <option value="4">4 stars</option>
+                                    <option value="3">3 stars</option>
+                                    <option value="2">2 stars</option>
+                                    <option value="1">1 star</option>
+                                    </select>
+                                </div>
+                                <input type="submit" value="Search" class="btn" onclick='submitForm()'>
+                            </div>         
+                        </div>
+                    </form>
+                </fieldset>
+            <!-- </form> -->
+            <a href="./results_sample.html">
+               <button style="padding: 2em; font-size: 16px;">Show Sample Results</button>
+            </a>
+        </div>
+    </main>
+</body>
+
+
+
+
+<!--             <div class="fake_fieldset edited"><div class="fake_legend edited">You can ...</div><div class="fake_fieldset container">
+                <form action='./results_sample.html' class='formentry'>
+                    <fieldset>
+                        <legend class='legend'>Search by name</legend>
+                        <a style="color:#ffd966;">Name:</a>
+                        <input type='text' name='museumname' placeholder='museum name or keyword'>
+                        <input type='submit' value='Search'>
+                    </fieldset>
+                    <fieldset>
+                        <legend class='legend'>Search by rating</legend>
+                        <a style="color:#ffd966;">Rating:</a>
+                        <select name='rating'>
+                            <option value='5'>5 stars</option>
+                            <option value='4'>4 stars</option>
+                            <option value='3'>3 stars</option>
+                            <option value='2'>2 stars</option>
+                            <option value='1'>1 star</option>
+                        </select>
+                        <input type='submit' value='Search'>
+                    </fieldset>
+ -->
+
+                
+
+
+<!-- <script src='./js/menu.js'></script>
+<script src='./js/search.js'></script>
+ -->
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <title>Finding Museum | Sign Up</title>
+
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
+
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+
+    <!-- google material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+</head>
+
+<body>
+
+    <!-- navigation -->
+    <header>
+        <nav class='appbar'>
+            <ul class='appbar'>
+                <li>
+                    <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+                <li>
+                    <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+                <li>
+                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+                <li>
+                    <a class='account current' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+                <li>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                </li>
+            </ul>
+            <a href="#" id="dropdown">Finding Museum</a>
+        </nav>
+    </header>
+
+    <!-- main content -->
+
+    <main class='main-section'>
+        <div class='content'>
+            <h1 class='heading'>Sign Up</h1>
+            <form class="wrapper">
+
+                <div class="title">
+                    Registration Form
+                </div>
+                <div class="form">
+
+                    <div class="inputfield">
+                        <label>First Name</label>
+                        <input type="text" class="input" placeholder='First name here...'>
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Last Name</label>
+                        <input type="text" class="input" placeholder='Last name here...'>
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Username</label>
+                        <input type="text" class="input" placeholder='Username here...' required>
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Password</label>
+                        <input type="password" class="input" placeholder='Password here...' required>
+                    </div>
+
+                    <div class="inputfield">
+
+                        <label>Gender</label>
+                        <div class="custom_select" name='gender'>
+                            <select>
+                            <option value="">Select</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                        </div>
+                    </div>
+
+                    <div class="inputfield">
+                        <label>Email</label>
+                        <input type="email" id="email" class="input" placeholder='Email here...' required>
+                    </div>
+
+
+                    <div class="inputfield">
+                        <label>Date of birth:</label>
+                        <input type='date' class="input" name='dob' required>
+                    </div>
+
+                    <div class="inputfield terms">
+                        <label class="check">
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <p>Agreed to terms and conditions</p>
+                    </div>
+
+                    <div class="inputfield">
+                        <input type="submit" value="Register" class="btn" onclick='submitForm()'>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+<script src='./js/menu.js'></script>
+<script src='./js/registration.js'></script>
+
+</html>
