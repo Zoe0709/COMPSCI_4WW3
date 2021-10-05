@@ -6,7 +6,7 @@
 **Term:** 2021 Fall
 **Group Members:**
 1). Zoe Ning, ningh4
-2). Abdullah, 
+2). Abdullah AbdulMaksoud, abdulmaa
 
 
 ## Description: 
