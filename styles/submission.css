@@ -141,33 +141,167 @@ nav a:hover {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 3rem;
-    margin-top: 35vh;
 }
 
 
-/*
-    For the element with an id main-header
-*/
+/* Styling the header of the page (submit a new museum)  */
 
-#main-header {
-    font-weight: 400;
-    font-size: 44px;
-    color: #A45D5D;
-    text-align: center;
-    margin: 4px;
-}
-
-
-/*
-    For the element with an id secondary-header
-*/
-
-#secondary-header {
+.heading {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 34px;
     color: #fff;
     text-align: center;
-    letter-spacing: 0.12rem;
+    margin-top: 70px;
+    border-bottom: double #CC9B6D;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *         Styling the wrapper form        * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+/* Styling the form box  */
+
+.wrapper {
+    max-width: 500px;
+    background: #B68973;
+    margin: 100px auto;
+    /* adds a shadow for the form box (makes it look nicer)  */
+    box-shadow: 2px 2px 4px #2B2B28;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+/* Styling the tittles for the 2 parts of the form  */
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2B2B28;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .inputfield {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Styling the labels of the form  */
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #2B2B28;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+.wrapper .form .inputfield .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #A45D5D;
+    font-size: 19px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    height: 30px;
+}
+
+
+/* The Register button */
+
+.wrapper .form .inputfield .btn {
+    margin-left: 20%;
+    width: 60%;
+    padding: 8px 10px;
+    font-size: 24px;
+    border: 0px;
+    background: #2B2B28;
+    color: #B68973;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    height: 60px;
+}
+
+
+/* When the Register/ submit button is hovered over */
+
+.wrapper .form .inputfield .btn:hover {
+    background: #A45D5D;
+}
+
+
+/* margin for the last element in the form */
+
+.wrapper .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+
+/* different style for smaller */
+
+@media (max-width:420px) {
+    .wrapper .form .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .inputfield label {
+        margin-bottom: 5px;
+    }
+    .wrapper .title {
+        font-size: 20px;
+    }
+    .wrapper .form .inputfield .btn {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+
+/* Below is for "choose image" button on submission page */
+
+input[type="file"] {
+    display: none;
+    /*visibility: hidden;*/
+}
+
+.custom-file-upload {
+    float: right;
+    border: 0px;
+    border-radius: 6px;
+    padding: 8px 10px;
+    cursor: pointer;
+    /*transition: 1s;*/
+    background: #2B2B28;
+    color: #B68973;
+    font-size: 24px;
+    text-align: center;
+    width: 50%;
+    outline: none;
+    height: 30px;
+}
+
+.custom-file-upload:hover {
+    background: #A45D5D;
+    cursor: pointer;
 }
 
 

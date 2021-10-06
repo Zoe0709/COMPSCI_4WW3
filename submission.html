@@ -2,125 +2,237 @@
 <html lang='en'>
 
 <head>
+    <!--- The tittle that shows in the tab of the web browser -->
     <title>Finding Museum | Submit New Museum</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- css -->
-    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
 
-    <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <!-- referencing the css file -->
+    <link rel='stylesheet' type='text/css' href='./styles/submission.css'>
 
-    <!-- google material icons -->
+    <!-- google icons for the navigation bar -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
 </head>
 
 <body>
 
-    <!-- navigation -->
+
+
+    <!-- Page header to contain the navigation bar -->
     <header>
-        <nav class='appbar'>
-            <ul class='appbar'>
+        <!-- navigation -->
+        <nav>
+            <!-- 5 buttons in the navigation menue, which all use google icons -->
+            <ul>
+
+                <!-- the Home anchor element -->
                 <li>
                     <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
+
+                <!-- the Search anchor element -->
                 <li>
                     <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
+
+                <!-- the Submit anchor element -->
                 <li>
                     <a class='current' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
+
+                <!-- the Sign Up anchor element -->
                 <li>
                     <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
+
+                <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
+
             </ul>
-            <a href="#" id="dropdown">Finding Museum</a>
+
+
         </nav>
+
+
+
+
+        <!-- navigation for smaller sizes -->
+        <div style="background-color: #B68973;">
+
+            <ul class="phone-menue">
+
+                <!-- the Home anchor element -->
+                <li>
+                    <a id='phone-current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign In anchor element -->
+                <li>
+                    <a id='phone-navr' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Search anchor element -->
+                <li>
+                    <a id='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign Up anchor element -->
+                <li>
+                    <a id='phone-navr' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Submit anchor element -->
+                <li>
+                    <a id='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </header>
 
-    <!-- main content -->
+
+
+
+    <!-- main content of the page -->
 
     <main class='main-section'>
         <div class='content'>
+
+            <!-- The header of the page -->
             <h1 class='heading'>Submit a New Museum</h1>
-                <form class="wrapper">
-                    <form action='./index.html' class='formentry'>
+
+            <!-- The form that will take the information about the Museum -->
+            <form class="wrapper">
+
+                <!-- A temporary URI to submit the form information -->
+                <form action='./index.html'>
+
+
+
+                    <!-- The form is divided into 2 parts -->
+                    <div class="form">
+
+                        <!-- 
+                        
+                        Part 1 of the form (museum information)
+                    
+                        -->
+
+
+                        <!-- The tittle for the first part in the form -->
                         <div class="title">
                             Museum Info
                         </div>
-                        <div class="form">
-                            <div class="inputfield">
-                                <label>Museum Name</label>
-                                <input type="text" class="input" placeholder='Museum name here'>
-                            </div>
-                            <div class="inputfield">
-                                <label>Museum Address</label>
-                                <input type="text" class="input" placeholder='Museum address here'>
-                            </div>
-                            <div class="inputfield">
-                                <label>Museum Phone Number</label>
-                                <input type="text" class="input" placeholder='Phone number here'>
-                            </div>
-                            <div class="inputfield">
-                                <label>Museum Open Hours</label>
-                                <input type="text" class="input" placeholder='Open hours here'>
-                            </div>
-                            <div class="inputfield">
-                                <label>Museum Description</label>
-                                <input type="text" class="input" placeholder='Museum description here'>
-                            </div>
-                            <label class="custom-file-upload">
-                                <input type="file" class="custom-file-upload">
-                                Choose Image
-                            </label>
-                            <div class="inputfield">
-                                <label>Museum Image</label>
-                            </div>
-                            
-                            <!-- <div class="inputfield">
-                                <label>Museum Image</label>
-                                <input type="file" class="custom-file-input">
-                            </div> -->
-                            <div class="title" style="margin-top: 40px;">
-                                Museum Location
-                            </div>
 
-                            <!-- 
-                            <fieldset>
-                                <legend class='legend'>Museum Location</legend>
-                                <a style="color:#ffd966;">Longitude:</a>
-                                <input id='longitude' type='number' step='0.001' name='longitude' placeholder='long' min='-90' max='90'><br> 
-                                <br>
-                                <a style="color:#ffd966;">Latitude:</a>
-                                <input id='latitude' type='number' step='0.001' name='latitude' placeholder='lat' min='-180' max='180'><br>
-                                <!-- <p id='location-heading'>Use my location: <a class='locationbtn' onclick='getLocation()'><i class='material-icons sm-18'>my_location</i></a></p> 
-                            </fieldset>  -->
-                            <div class="inputfield">
-                                <label>Museum Location</label>
-                                <input id='longitude' type="number" step='0.001' name='longitude' placeholder='long' min='-90' max='90' class="input">
-                            </div>
-                            <div class="inputfield">
-                                <label>Latitude</label>
-                                <input id='latitude' type="number" step='0.001' name='latitude' placeholder='lat' min='-180' max='180' class="input">
-                            </div>
-
-                            <div class="inputfield">
-                                <input type="submit" value="Submit" class="btn">
-                            </div>
-
+                        <!-- **REQUIRED** The name of the museum **REQUIRED** -->
+                        <div class="inputfield">
+                            <label>Museum Name</label>
+                            <input type="text" class="input" placeholder='Museum name here' required>
                         </div>
-                    </form>
+
+                        <!-- The address of the museum -->
+                        <div class="inputfield">
+                            <label>Museum Address</label>
+                            <input type="text" class="input" placeholder='Museum address here'>
+                        </div>
+
+                        <!-- The phone number of the museum -->
+                        <div class="inputfield">
+                            <label>Museum Phone Number</label>
+                            <input type="text" class="input" placeholder='Phone number here'>
+                        </div>
+
+                        <!-- The open hours of the museum -->
+                        <div class="inputfield">
+                            <label>Museum Open Hours</label>
+                            <input type="text" class="input" placeholder='Open hours here'>
+                        </div>
+
+
+                        <!-- A brief description the museum -->
+                        <div class="inputfield">
+                            <label>Museum Description</label>
+                            <input type="text" class="input" placeholder='Museum description here'>
+                        </div>
+
+                        <!-- Choosing an image for the museum -->
+                        <label class="custom-file-upload">
+                            <input type="file" class="custom-file-upload">
+                            Choose Image
+                        </label>
+                        <div class="inputfield">
+                            <label>Museum Image</label>
+                        </div>
+
+
+                        <!-- 
+                        
+                            Part 2 of the form (museum information)
+                    
+                        -->
+
+                        <!-- The tittle for the second part in the form -->
+                        <div class="title" style="margin-top: 40px;">
+                            Museum Location
+                        </div>
+
+                        <!-- The longitude of the musuem -->
+                        <div class="inputfield">
+                            <label>Longitude</label>
+                            <input id='longitude' type="number" step='0.001' name='longitude' placeholder='long' min='-90' max='90' class="input">
+                        </div>
+
+                        <!-- The latitude of the musuem -->
+                        <div class="inputfield">
+                            <label>Latitude</label>
+                            <input id='latitude' type="number" step='0.001' name='latitude' placeholder='lat' min='-180' max='180' class="input">
+                        </div>
+
+
+                        <!-- 
+                        
+                            The submit button
+                    
+                        -->
+                        <div class="inputfield">
+                            <input type="submit" value="Submit" class="btn">
+                        </div>
+
+                    </div>
                 </form>
+            </form>
         </div>
     </main>
 </body>
 
-<!-- <script src='./js/menu.js'></script>
-<script src='./js/submit.js'></script>
- -->
+<!-- Footer of the page -->
+<footer>
+    <p>Authors: Zoe and Abdullah<br>
+</footer>
+
 </html>

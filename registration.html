@@ -2,53 +2,130 @@
 <html lang='en'>
 
 <head>
+    <!--- The tittle that shows in the tab of the web browser -->
     <title>Finding Museum | Sign Up</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- css -->
-    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
 
-    <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <!-- referencing the css file -->
+    <link rel='stylesheet' type='text/css' href='./styles/registration.css'>
 
-    <!-- google material icons -->
+    <!-- google icons for the navigation bar -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+
 </head>
 
 <body>
 
-    <!-- navigation -->
+    <!-- Page header to contain the navigation bar -->
     <header>
-        <nav class='appbar'>
-            <ul class='appbar'>
+        <!-- navigation -->
+        <nav>
+            <!-- 5 buttons in the navigation menue, which all use google icons -->
+            <ul>
+
+                <!-- the Home anchor element -->
                 <li>
                     <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
+
+                <!-- the Search anchor element -->
                 <li>
                     <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
+
+                <!-- the Submit anchor element -->
                 <li>
                     <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
+
+                <!-- the Sign Up anchor element -->
                 <li>
                     <a class='account current' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
+
+                <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
+
             </ul>
-            <a href="#" id="dropdown">Finding Museum</a>
+
+
         </nav>
+
+        <!-- navigation for smaller sizes -->
+        <div style="background-color: #B68973;">
+
+            <ul class="phone-menue">
+
+                <!-- the Home anchor element -->
+                <li>
+                    <a id='phone-current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign In anchor element -->
+                <li>
+                    <a id='phone-navr' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Search anchor element -->
+                <li>
+                    <a id='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign Up anchor element -->
+                <li>
+                    <a id='phone-navr' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Submit anchor element -->
+                <li>
+                    <a id='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+
+            </ul>
+
+        </div>
+
+
     </header>
 
-    <!-- main content -->
+
+
+    <!-- main content of the page -->
 
     <main class='main-section'>
         <div class='content'>
+
+            <!-- The header of the page -->
             <h1 class='heading'>Sign Up</h1>
+
+
+            <!-- The form that will take the registration information about the user -->
             <form class="wrapper">
+
 
                 <div class="title">
                     Registration Form
@@ -116,7 +193,10 @@
     </main>
 </body>
 
-<script src='./js/menu.js'></script>
-<script src='./js/registration.js'></script>
+
+<!-- Footer of the page -->
+<footer>
+    <p>Authors: Zoe and Abdullah<br>
+</footer>
 
 </html>
