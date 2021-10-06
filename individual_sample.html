@@ -1,22 +1,27 @@
 <!DOCTYPE html>
+
+<!-- Specify the language code as English -->
 <html lang='en'>
 
 <head>
+    <!--- The title that shows in the tab of the web browser -->
     <title>Finding Museum | Museum Details</title>
 
+    <!-- Use the viewport meta tag to control layout and the zoom level on mobile browsers -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- css -->
+    
+    <!-- Referencing the css file -->
     <link rel='stylesheet' type='text/css' href='./styles/individual_sample.css'>
 
-    <!-- google material icons -->
+    <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 
-    <!-- navigation bar -->
+    <!-- Page header to contain the navigation bar -->
     <header>
-        <!-- navigation -->
+        <!-- navigation bar -->
         <nav>
             <!-- 5 buttons in the navigation menue, which all use google icons -->
             <ul>
@@ -105,28 +110,40 @@
 
         </div>
 
-
-
-
     </header>
 
 
-    <!-- main content -->
+    <!-- Main content of the page -->
 
     <main class='main-section'>
         <div class='content'>
+
+            <!-- Header that indicates content of this page -->
             <h1 class='heading'>Museum Infomation</h1>
+
+            <!-- The screenshot of Aga Khan Museum on a map -->
             <a href='./screenshots/aga_khan_map.jpeg'><img src='./screenshots/aga_khan_map.jpeg' alt="Aga Khan Museum"></a>
+
+            <!-- Include a photo of Aga Khan Museum -->
             <p><img src="./screenshots/aga_khan.jpeg" style="float:right;width:50%;margin-top:5em;">
+
+                <!-- Detailed information of museum -->
                 <div class='museum-info'>
+
+                    <!-- Name of museum -->
                     <h2 class='heading'>Aga Khan Museum</h2>
+                    <!-- Address of museum -->
                     <p class='subheading-t'>Address: </p>
+                    <!-- Details use smaller and lighter font to display -->
                     <p class='subheading-p'>77 Wynford Drive, Toronto, Ontario M3C 1K1</p>
+                    <!-- Phone number of museum -->
                     <p class='subheading-t'>Phone: </p>
                     <p class='subheading-p'>+1 (416)-646-4677</p>
+                    <!-- Open hours of museum -->
                     <p class='subheading-t'>Open Hours: </p>
                     <p class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
                     <p class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
+                    <!-- Brief description of museum -->
                     <p class='subheading-t'>Description: </p>
                     <p class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
                         the world.</p>
@@ -134,27 +151,40 @@
             </p>
         </div>
         <div style="margin-bottom: 80px;">
+            <!-- Table shows all comments about the museum -->
             <table class='result-table center'>
                 <tr>
+                    <!-- Table has three columns -->
                     <th>Username</th>
                     <th>Rating</th>
                     <th>Review</th>
                 </tr>
+
+                <!-- The first row of the table (except the header row) -->
                 <tr>
+                    <!-- Grid for username of the first row -->
                     <td>Alecia Danniel</td>
+                    <!-- Grid for rating of the first row -->
                     <td>5 stars</td>
+                    <!-- Grid for review of the first row -->
                     <td>Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
                 </tr>
+
+                <!-- The second row of the table -->
                 <tr>
                     <td>Suzan Evanson</td>
                     <td>4 stars</td>
                     <td>The museum is designed well and they have a large collection of books and manuscripts.</td>
                 </tr>
+
+                <!-- The third row of the table -->
                 <tr>
                     <td>Miranda Walt Dalton</td>
                     <td>4 stars</td>
                     <td>A great place to experience the history of art and culture of medieval Islamic world.</td>
                 </tr>
+
+                <!-- The fourth row of the table -->
                 <tr>
                     <td>Sebastian Cobb</td>
                     <td>3 stars</td>
@@ -167,7 +197,9 @@
 
 <!-- Footer of the page -->
 <footer>
-    <p>Authors: Zoe and Abdullah<br>
+    <!-- Include a google icon in front of authors -->
+    <i class='material-icons sm-18'>account_circle</i><a>Authors: Zoe and Abdullah</a>
 </footer>
 
+<!-- End of individial sample page -->
 </html>

@@ -21,17 +21,30 @@ body {
     flex-direction: column;
 }
 
-.content {
-    max-width: 1400px;
-    margin: 20px auto;
-    padding: 0 3rem;
-}
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *        Styling the main content         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
 
 .main-section {
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-y: hidden;
+}
+
+.content {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 3rem;
 }
 
 .main-section .content .home {
@@ -54,6 +67,9 @@ body {
     letter-spacing: 0.12rem;
 }
 
+
+/* Styling the header of the page */
+
 .heading {
     font-weight: 300;
     font-size: 34px;
@@ -72,11 +88,16 @@ body {
     margin-top: 6px;
 }
 
+
+/* Icons that show up in the navigation bar */
+
 i {
     margin-right: 6px;
     vertical-align: middle;
 }
 
+
+/* Styling the caption of fieldset grouping */
 .legend {
     font-weight: bold;
     text-align: left;
@@ -97,14 +118,23 @@ nav {
     position: fixed;
 }
 
+
+/* for ul elements inside nav */
+
 nav ul {
     padding: 0;
     margin: 0;
 }
 
+
+/* for li elements inside nav */
+
 nav li {
     display: inline;
 }
+
+
+/* for a elements inside nav */
 
 nav a {
     display: inline-block;
@@ -116,6 +146,9 @@ nav a {
     color: #00FFFF;
 }
 
+
+/* when hovering over an anchor element that is inside nav */
+
 nav a:hover {
     color: #A45D5D;
     cursor: pointer;
@@ -125,16 +158,25 @@ nav a:active {
     color: #A45D5D;
 }
 
+
+/* The element that is in the current class (which represents the active page) has #4A403A color.
+    The elements in the default-nav class (elements in the navigation bar that are not the current page)
+    have #fff color (white) 
+*/
+
 .current {
     color: #4A403A !important;
 }
 
-.account {
-    float: right;
-}
-
 .default-nav {
     color: #fff;
+}
+
+
+/* Make the elements in the account class (sign in and sign up) be on the right*/
+
+.account {
+    float: right;
 }
 
 
@@ -149,8 +191,6 @@ nav a:active {
 
 /* end navbar */
 
-
-/* Smaller sized screens */
 
 
 /* 
@@ -260,6 +300,7 @@ The Wrapper for the Registration form
 
 .wrapper .form .inputfield .input {
     width: 100%;
+    margin-right: 2em;
     outline: none;
     border: 1px solid #A45D5D;
     font-size: 19px;
@@ -274,8 +315,9 @@ The Wrapper for the Registration form
 
 .wrapper .form .inputfield .custom_select {
     position: relative;
-    width: 108%;
+    width: 100%;
     height: 50px;
+    margin-right: 2em;
 }
 
 
@@ -320,8 +362,7 @@ The Wrapper for the Registration form
 /* The Search button */
 
 .wrapper .form .inputfield .btn {
-    margin-left: 20%;
-    width: 80%;
+    width: 100%;
     padding: 8px 10px;
     font-size: 24px;
     border: 0px;
@@ -376,7 +417,7 @@ The Wrapper for the Registration form
 
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 1em;
     background-color: #B68973;
     bottom: 0;
     color: white;

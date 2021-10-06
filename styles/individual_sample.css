@@ -21,6 +21,18 @@ body {
     flex-direction: column;
 }
 
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *             Styling the table           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
@@ -36,8 +48,11 @@ th {
     padding: 10px;
 }
 
+
+/* Change the background color of even rows */
+
 tr:nth-child(even) {
-    background: #2B2B28;
+    background: #434343;
 }
 
 td a {
@@ -45,6 +60,9 @@ td a {
     text-decoration: none;
     color: inherit;
 }
+
+
+/* Change the background color when cursor hovering over the table */
 
 tr:hover {
     background: #16697A;
@@ -67,6 +85,19 @@ table.center {
     margin-top: auto;
 }
 
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *             Styling the image           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
 img {
     padding: 5px;
     display: block;
@@ -75,31 +106,38 @@ img {
     width: 80%;
 }
 
+
+/* Styling the image when cursor hovering over it */
+
 img:hover {
     box-shadow: 0 0 8px #16697A;
     cursor: pointer
 }
 
-.content {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 3rem;
-}
 
-.museum-info {
-    float: left;
-    text-align: left;
-    max-width: 35%;
-    max-height: 75%;
-    color: #fff;
-    padding-bottom: 2em;
-}
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *        Styling the main content         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
 
 .main-section {
     width: 100%;
     margin: 0;
     padding: 0;
     overflow-y: hidden;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 3rem;
 }
 
 .main-section .content .home {
@@ -122,6 +160,9 @@ img:hover {
     letter-spacing: 0.12rem;
 }
 
+
+/* Styling the header of the page */
+
 .heading {
     font-weight: 300;
     font-size: 34px;
@@ -140,6 +181,9 @@ img:hover {
     margin-top: 6px;
 }
 
+
+/* Styling the title of the museum information */
+
 .subheading-t {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 600;
@@ -149,6 +193,9 @@ img:hover {
     margin: 16px;
     margin-top: 16px;
 }
+
+
+/* Styling the detailed content of the museum information */
 
 .subheading-p {
     font-family: 'Roboto', Helvetica, sans-serif;
@@ -161,9 +208,24 @@ img:hover {
     margin-left: 30px;
 }
 
+
+/* Icons that show up in the navigation bar */
+
 i {
     margin-right: 6px;
     vertical-align: middle;
+}
+
+
+/* Styling the museum information */
+
+.museum-info {
+    float: left;
+    text-align: left;
+    max-width: 35%;
+    max-height: 75%;
+    color: #fff;
+    padding-bottom: 2em;
 }
 
 
@@ -176,14 +238,23 @@ nav {
     position: fixed;
 }
 
+
+/* for ul elements inside nav */
+
 nav ul {
     padding: 0;
     margin: 0;
 }
 
+
+/* for li elements inside nav */
+
 nav li {
     display: inline;
 }
+
+
+/* for a elements inside nav */
 
 nav a {
     display: inline-block;
@@ -194,6 +265,9 @@ nav a {
     padding: 20px 0px;
     color: #00FFFF;
 }
+
+
+/* when hovering over an anchor element that is inside nav */
 
 nav a:hover {
     color: #A45D5D;
@@ -208,16 +282,25 @@ nav a#dropdown {
     display: none;
 }
 
+
+/* The element that is in the current class (which represents the active page) has #4A403A color.
+    The elements in the default-nav class (elements in the navigation bar that are not the current page)
+    have #fff color (white) 
+*/
+
 .current {
     color: #4A403A !important;
 }
 
-.account {
-    float: right;
-}
-
 .default-nav {
     color: #fff;
+}
+
+
+/* Make the elements in the account class (sign in and sign up) be on the right*/
+
+.account {
+    float: right;
 }
 
 
@@ -247,7 +330,7 @@ nav a#dropdown {
 
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 1em;
     background-color: #B68973;
     bottom: 0;
     color: white;

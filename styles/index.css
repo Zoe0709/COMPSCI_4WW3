@@ -152,7 +152,7 @@ nav a:hover {
 #main-header {
     font-weight: 400;
     font-size: 44px;
-    color: #A45D5D;
+    color: #ffd966;
     text-align: center;
     margin: 4px;
 }
@@ -185,7 +185,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 1em;
     background-color: #B68973;
     bottom: 0;
     color: white;

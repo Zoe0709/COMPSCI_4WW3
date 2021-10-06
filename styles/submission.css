@@ -284,7 +284,6 @@ nav a:hover {
 
 input[type="file"] {
     display: none;
-    /*visibility: hidden;*/
 }
 
 .custom-file-upload {
@@ -293,7 +292,6 @@ input[type="file"] {
     border-radius: 6px;
     padding: 8px 10px;
     cursor: pointer;
-    /*transition: 1s;*/
     background: #2B2B28;
     color: #B68973 !important;
     font-size: 24px;
@@ -323,7 +321,7 @@ input[type="file"] {
 
 footer {
     text-align: center;
-    padding: 3px;
+    padding: 1em;
     background-color: #B68973;
     bottom: 0;
     color: white;

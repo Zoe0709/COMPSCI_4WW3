@@ -1,23 +1,27 @@
 <!DOCTYPE html>
+
+<!-- Specify the language code as English -->
 <html lang='en'>
 
 <head>
+    <!--- The title that shows in the tab of the web browser -->
     <title>Finding Museum | Search Results</title>
 
+    <!-- Use the viewport meta tag to control layout and the zoom level on mobile browsers -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- css -->
+
+    <!-- Referencing the css file -->
     <link rel='stylesheet' type='text/css' href='./styles/results_sample.css'>
 
-    <!-- google material icons -->
+    <!-- google material icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 
-
     <!-- Page header to contain the navigation bar -->
     <header>
-        <!-- navigation -->
+        <!-- navigation bar -->
         <nav>
             <!-- 5 buttons in the navigation menue, which all use google icons -->
             <ul>
@@ -110,33 +114,51 @@
     </header>
 
 
-    <!-- main content -->
+    <!-- Main content of the page -->
 
     <main class='main-section'>
         <div class='content'>
+
+            <!-- Header that indicates content of this page -->
             <h1 class='heading'>Search Results</h1>
             <div class='result-container'>
+
+                <!-- The screenshot of three result museums on a map -->
                 <a href='./screenshots/search_sample.jpeg'><img src='./screenshots/search_sample.jpeg' alt="Search Results"></a>
+
+                <!-- Show the results in a tabular format -->
                 <table class='result-table center'>
+
+                    <!-- Table has four columns -->
                     <tr>
                         <th>Museum</th>
                         <th>Rating</th>
                         <th>Address</th>
                         <th>Postal Code</th>
                     </tr>
+
+                    <!-- The first row of the table (except the header row) -->
                     <tr>
+                        <!-- Grid for museum name of the first row including a link to the individual page of the corresponding museum -->
                         <td><a href='./individual_sample.html'>Aga Khan Museum</a></td>
+                        <!-- Grid for rating of the first row -->
                         <td><a href='./individual_sample.html'>4.6 Stars</a></td>
+                        <!-- Grid for address of the first row -->
                         <td><a href='./individual_sample.html'>77 Wynford Drive, Toronto, Ontario</a></td>
+                        <!-- Grid for postal code of the first row -->
                         <td><a href='./individual_sample.html'>M3C 1K1</a></td>
 
                     </tr>
+
+                    <!-- The second row of the table -->
                     <tr>
                         <td><a href='./individual_sample.html'>Bata Shoe Museum</a></td>
                         <td><a href='./individual_sample.html'>4.3 Stars</a></td>
                         <td><a href='./individual_sample.html'>327 Bloor St W, Toronto, Ontario</a></td>
                         <td><a href='./individual_sample.html'>M5S 1W7</a></td>
                     </tr>
+
+                    <!-- The third row of the table -->
                     <tr>
                         <td><a href='./individual_sample.html'>Canadian Canoe Museum</a></td>
                         <td><a href='./individual_sample.html'>4.1 Stars</a></td>
@@ -151,7 +173,9 @@
 
 <!-- Footer of the page -->
 <footer>
-    <p>Authors: Zoe and Abdullah<br>
+    <!-- Include a google icon in front of authors -->
+    <i class='material-icons sm-18'>account_circle</i><a>Authors: Zoe and Abdullah</a>
 </footer>
 
+<!-- End of individial sample page -->
 </html>

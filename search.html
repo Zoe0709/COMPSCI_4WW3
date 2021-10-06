@@ -1,21 +1,27 @@
 <!DOCTYPE html>
+
+<!-- Specify the language code as English -->
 <html lang='en'>
 
 <head>
+    <!--- The title that shows in the tab of the web browser -->
     <title>Finding Museum | Search</title>
 
+    <!-- Use the viewport meta tag to control layout and the zoom level on mobile browsers -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
+    <!-- Referencing the css file -->
     <link rel='stylesheet' type='text/css' href='./styles/search.css'>
 
+    <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 
-    <!-- navigation bar -->
+    <!-- Page header to contain the navigation bar -->
     <header>
-        <!-- navigation -->
+        <!-- navigation bar -->
         <nav>
             <!-- 5 buttons in the navigation menue, which all use google icons -->
             <ul>
@@ -46,7 +52,6 @@
                 </li>
 
             </ul>
-
 
         </nav>
 
@@ -105,25 +110,37 @@
         </div>
 
 
-
-
     </header>
 
 
+    <!-- Main content of the page -->
+
     <main class='main-section'>
         <div class='content'>
+
+            <!-- Header that indicates content of this page -->
             <h1 class='heading'>Search for Museums</h1>
             <fieldset class='formentry'>
+
+                <!-- Caption of the fieldset grouping -->
                 <legend class='legend'>YOU CAN ...</legend>
 
+                <!-- The form that will search and filter museums by name -->
                 <div class="wrapper">
+
+                    <!-- The tittle for the form -->
                     <div class="title">
                         SEARCH BY NAME
                     </div>
                     <div class="form">
+
                         <div class="inputfield">
                             <label>Name:</label>
+
+                            <!-- Text box for museum name -->
                             <input type="text" name="museumname" class="input" placeholder='Museum name here'>
+
+                            <!-- The search button, click to jump to results sample page -->
                             <a href="./results_sample.html">
                                 <input type="submit" value="Search" class="btn" onclick='submitForm()'>
                             </a>
@@ -131,14 +148,23 @@
                     </div>
                 </div>
 
+                <!-- The form that will search and filter museums by rating -->
                 <div class="wrapper">
+
+                    <!-- The tittle for the form -->
                     <div class="title">
                         SEARCH BY RATING
                     </div>
+
                     <div class="form">
+
                         <div class="inputfield">
                             <label>Rating:</label>
+
+                            <!-- Drop down box for museum rating -->
                             <div class="custom_select" name='rating'>
+
+                                <!-- Five options to select -->
                                 <select>
                                     <option value="5">5 stars</option>
                                     <option value="4">4 stars</option>
@@ -148,6 +174,8 @@
                                     </select>
                             </div>
                             <div>
+
+                                <!-- The submit button, click to jump to results sample page -->
                                 <a href="./results_sample.html">
 
                                     <input type="submit" onclick='submitForm()' class="btn">
@@ -158,15 +186,16 @@
                     </div>
                 </div>
             </fieldset>
-            <a href="./results_sample.html">
-                <button style="padding: 2em; font-size: 16px;">Show Sample Results</button>
-            </a>
+
         </div>
     </main>
 </body>
+
 <!-- Footer of the page -->
 <footer>
-    <p>Authors: Zoe and Abdullah<br>
+    <!-- Include a google icon in front of authors -->
+    <i class='material-icons sm-18'>account_circle</i><a>Authors: Zoe and Abdullah</a>
 </footer>
 
+<!-- End of individial sample page -->
 </html>
