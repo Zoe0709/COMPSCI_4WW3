@@ -279,7 +279,7 @@ nav a:hover {
 }
 
 
-/* The custom select of gender */
+/* Styling the custom select */
 
 .wrapper .form .inputfield .custom_select {
     position: relative;
@@ -288,7 +288,7 @@ nav a:hover {
 }
 
 
-/* The arrow of the custom select of gender */
+/* Styling the arrow of the custom select */
 
 .wrapper .form .inputfield .custom_select:before {
     content: "";
@@ -301,7 +301,7 @@ nav a:hover {
 }
 
 
-/* When an Item is selected in the gender select*/
+/* When an Item is selected in the custom select*/
 
 .wrapper .form .inputfield .custom_select select {
     -webkit-appearance: none;
