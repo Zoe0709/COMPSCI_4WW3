@@ -276,7 +276,7 @@ nav a:hover {
 }
 
 
-/* Below is for "choose image" button on submission page */
+/* Styling the choose image button */
 
 input[type="file"] {
     display: none;
@@ -291,7 +291,7 @@ input[type="file"] {
     cursor: pointer;
     /*transition: 1s;*/
     background: #2B2B28;
-    color: #B68973;
+    color: #B68973 !important;
     font-size: 24px;
     text-align: center;
     width: 50%;
