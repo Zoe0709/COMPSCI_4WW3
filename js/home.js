@@ -1,13 +1,3 @@
-// function randomColor() {
-//     return '#'+ ('000000' + (Math.random()*0xFFFFFF<<0).toString(16)).slice(-6)
-// }
-
-// function setBackImg(){
-//     document.getElementById('backImg').style.backgroundColor = randomColor();
-//     setTimeout(setColor, 2000);
-// }
-// setColor();
-
 var images = new Array(
     './background_photos/img1.jpeg',
     './background_photos/img2.jpeg',
