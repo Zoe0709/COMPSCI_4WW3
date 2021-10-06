@@ -2,11 +2,11 @@
 
  
 ## Overview:
-**Course:** COMPSCI 4WW3
-**Term:** 2021 Fall
-**Group Members:**
-1). Zoe Ning, ningh4
-2). Abdullah AbdulMaksoud, abdulmaa
+**Course:** COMPSCI 4WW3\
+**Term:** 2021 Fall\
+**Group Members:**\
+1). Zoe Ning, ningh4\
+2). Abdullah AbdulMaksoud, abdulmaa 
 
 
 ## Description: 

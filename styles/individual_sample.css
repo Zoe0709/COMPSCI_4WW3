@@ -2,7 +2,7 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
     scroll-padding-bottom: 40px;
-    background: #090d32;
+    background: #434343;
 }
 
 table {
@@ -13,13 +13,15 @@ table {
 
 td,
 th {
-    border: 1px solid #dddddd;
+    border: 3px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    font-size: 22px;
+    color: #fff;
+    padding: 10px;
 }
 
 tr:nth-child(even) {
-    background-color: #dddddd;
+    background: #2B2B28;
 }
 
 td a {
@@ -29,7 +31,7 @@ td a {
 }
 
 tr:hover {
-    background: rgba(94, 223, 255, 0.2);
+    background: #16697A;
     cursor: pointer;
 }
 
@@ -39,9 +41,27 @@ table.center {
 }
 
 .result-table {
-    max-width: 45%;
+    max-width: 75%;
     max-height: 50%;
     overflow: scroll;
+    margin-top: 30px;
+}
+
+.result-container {
+    margin-top: auto;
+}
+
+img {
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+img:hover {
+    box-shadow: 0 0 8px #16697A;
+    cursor: pointer
 }
 
 .content {
@@ -50,13 +70,13 @@ table.center {
     padding: 0 3rem;
 }
 
-.arena-info {
+.museum-info {
     float: left;
     text-align: left;
-    margin-right: 16px;
     max-width: 35%;
     max-height: 75%;
     color: #fff;
+    padding-bottom: 2em;
 }
 
 .main-section {
@@ -72,8 +92,8 @@ table.center {
 
 #main-header {
     font-weight: 400;
-    font-size: 38px;
-    color: #00FFFF;
+    font-size: 44px;
+    color: #ffd966;
     text-align: center;
     margin: 4px;
 }
@@ -88,10 +108,11 @@ table.center {
 
 .heading {
     font-weight: 300;
-    font-size: 24px;
+    font-size: 34px;
     color: #fff;
-    text-align: left;
-    margin: 16px;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: double #CC9B6D;
 }
 
 #location-heading {
@@ -103,107 +124,30 @@ table.center {
     margin-top: 6px;
 }
 
-.subheading-b {
+.subheading-t {
     font-family: 'Roboto', Helvetica, sans-serif;
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 20px;
     color: #fff;
     text-align: left;
     margin: 16px;
     margin-top: 16px;
 }
 
-.subheading-n {
+.subheading-p {
     font-family: 'Roboto', Helvetica, sans-serif;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
     text-align: left;
     margin: 16px;
     margin-top: 16px;
+    margin-left: 30px;
 }
 
 i {
     margin-right: 6px;
     vertical-align: middle;
-}
-
-.map {
-    box-shadow: 0px 1px 4px 0px black;
-    display: block;
-    width: 100%;
-    margin-bottom: 8px;
-}
-
-.formentry {
-    margin: 20px auto;
-    padding: 40px;
-    /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);*/
-    margin-top: 20%;
-    color: #00FFFF;
-    background-color: #070b24;
-    max-width: 700px;
-    box-shadow: 1px 1px 2px #00FFFF;
-    border-radius: 12px;
-    align-content: center;
-}
-
-.fieldsinput {
-    margin: 3%;
-}
-
-.fieldsinput label {
-    color: #fff;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.fieldsinput input,
-.fieldsinput select {
-    outline: none;
-    position: relative;
-    margin-left: 10px;
-    border: 2px solid #162075;
-    font-size: 20px;
-    padding: 8px 18px;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-
-.fieldsinput input:focus,
-.fieldsinput select:focus {
-    outline: none;
-    border: 2px solid #00FFFF;
-}
-
-.submitbuttons input {
-    position: relative;
-    border: none;
-    font-size: 20px;
-    padding: 12px 100px;
-    border-radius: 7px;
-    transition: all 0.3s ease;
-    align-self: center;
-}
-
-.legend {
-    font-weight: bold;
-    text-align: center;
-    font-size: 32px;
-    text-transform: uppercase;
-    margin-bottom: 5%;
-}
-
-.locationbtn {
-    text-decoration: none;
-    color: #fff;
-    cursor: pointer;
-}
-
-#map {
-    height: 60vh;
-    width: 100%;
-    margin: 16px;
 }
 
 
@@ -212,7 +156,7 @@ i {
 nav {
     height: 55px;
     width: 100%;
-    background-color: #070b24;
+    background-color: #B68973;
     position: fixed;
 }
 
@@ -232,16 +176,16 @@ nav a {
     text-align: center;
     text-decoration: none;
     padding: 20px 0px;
-    color: #BBB8B2;
+    color: #00FFFF;
 }
 
 nav a:hover {
-    color: #00FFFF;
+    color: #A45D5D;
     cursor: pointer;
 }
 
 nav a:active {
-    color: #00FFFF;
+    color: #A45D5D;
 }
 
 nav a#dropdown {
@@ -249,7 +193,7 @@ nav a#dropdown {
 }
 
 .current {
-    color: #00FFFF !important;
+    color: #4A403A !important;
 }
 
 .account {
@@ -259,8 +203,6 @@ nav a#dropdown {
 .default-nav {
     color: #fff;
 }
-
-
 /* end navbar */
 
 
@@ -328,21 +270,11 @@ nav a#dropdown {
     }
 }
 
-.footer {
-    clear: both;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    background-color: #070b24;
-    z-index: 80;
-}
 
-.footnotes {
-    text-align: center;
-    margin-top: 10px;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    color: #fff;
-}
+
+
+
+
+
+
+
