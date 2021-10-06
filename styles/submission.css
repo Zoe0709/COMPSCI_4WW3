@@ -225,6 +225,13 @@ nav a:hover {
 }
 
 
+/* when an input is selected */
+
+.wrapper .form .inputfield .input:focus {
+    border: 3px solid #A45D5D;
+}
+
+
 /* The Register button */
 
 .wrapper .form .inputfield .btn {
