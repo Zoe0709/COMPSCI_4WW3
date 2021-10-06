@@ -3,7 +3,7 @@
 
 <head>
     <!--- The tittle that shows in the tab of the web browser -->
-    <title>Finding Museum | Sign Up</title>
+    <title>Finding Museum | Sign In</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
 
@@ -42,12 +42,12 @@
 
                 <!-- the Sign Up anchor element -->
                 <li>
-                    <a class='account current' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                    <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a class='account current' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
 
             </ul>
@@ -70,7 +70,7 @@
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a id='phone-navr' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a id='phone-navr' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
 
             </ul>
@@ -120,7 +120,7 @@
         <div class='content'>
 
             <!-- The header of the page -->
-            <h1 class='heading'>Sign Up</h1>
+            <h1 class='heading'>Sign In</h1>
 
 
             <!-- The form that will take the registration information about the user -->
@@ -130,20 +130,9 @@
 
                     <!-- The tittle for the form -->
                     <div class="title">
-                        Registration Form
+                        Log In Form
                     </div>
 
-                    <!-- The first name of the user -->
-                    <div class="inputfield">
-                        <label>First Name</label>
-                        <input type="text" class="input" placeholder='First name here...'>
-                    </div>
-
-                    <!-- The last name of the user -->
-                    <div class="inputfield">
-                        <label>Last Name</label>
-                        <input type="text" class="input" placeholder='Last name here...'>
-                    </div>
 
                     <!-- **REQUIRED** The username of the user **REQUIRED** -->
                     <div class="inputfield">
@@ -157,45 +146,11 @@
                         <input type="password" class="input" placeholder='Password here...' required>
                     </div>
 
-                    <!-- The gender of the user -->
-                    <div class="inputfield">
 
-
-                        <label>Gender</label>
-                        <div class="custom_select" name='gender'>
-                            <select>
-                            <option value="">Select</option>
-                            <option value="male">Male</option>
-                            <option value="female">Female</option>
-                            <option value="other">Other</option>
-                        </select>
-                        </div>
-                    </div>
-
-                    <!-- **REQUIRED** The Email of the user **REQUIRED** -->
-                    <div class="inputfield">
-                        <label>Email</label>
-                        <input type="email" id="email" class="input" placeholder='Email here...' required>
-                    </div>
-
-                    <!-- **REQUIRED** The date of birth of the user **REQUIRED** -->
-                    <div class="inputfield">
-                        <label>Date of birth:</label>
-                        <input type='date' class="input" name='dob' required>
-                    </div>
-
-                    <!-- The terms and conditions checkbox -->
-                    <div class="inputfield terms">
-                        <label class="check">
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <p>Agreed to terms and conditions</p>
-                    </div>
 
                     <!-- The submit button -->
                     <div class="inputfield">
-                        <input type="submit" value="Register" class="btn">
+                        <input type="submit" value="Sign In" class="btn">
                     </div>
                 </div>
             </form>

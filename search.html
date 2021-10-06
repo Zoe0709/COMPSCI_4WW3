@@ -30,7 +30,7 @@
                     <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>account_circle</i>Sign Up</a>
                 </li>
                 <li>
-                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a class='account default-nav' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
             </ul>
             <a href="#" id="dropdown">Finding Museum</a>
@@ -41,43 +41,43 @@
     <main class='main-section'>
         <div class='content'>
             <h1 class='heading'>Search for Museums</h1>
-                <fieldset class='formentry'>
-                    <legend class='legend'>YOU CAN ...</legend>
-                    <form class="wrapper">
-                        <div class="title">
-                            SEARCH BY NAME
+            <fieldset class='formentry'>
+                <legend class='legend'>YOU CAN ...</legend>
+                <form class="wrapper">
+                    <div class="title">
+                        SEARCH BY NAME
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label>Name:</label>
+                            <input type="text" name="museumname" class="input" placeholder='Museum name here'>
+                            <input type="submit" value="Search" class="btn" onclick='submitForm()'>
                         </div>
-                        <div class="form">
-                            <div class="inputfield">
-                                <label>Name:</label>
-                                <input type="text" name="museumname" class="input" placeholder='Museum name here'>
-                                <input type="submit" value="Search" class="btn" onclick='submitForm()'>
-                            </div>         
-                        </div>
-                    </form>
-                    <form class="wrapper" >
-                        <div class="title">
-                            SEARCH BY RATING
-                        </div>
-                        <div class="form">
-                            <div class="inputfield">
-                                <label>Rating:</label>
-                                <div class="custom_select" name='rating'>
-                                    <select>
+                    </div>
+                </form>
+                <form class="wrapper">
+                    <div class="title">
+                        SEARCH BY RATING
+                    </div>
+                    <div class="form">
+                        <div class="inputfield">
+                            <label>Rating:</label>
+                            <div class="custom_select" name='rating'>
+                                <select>
                                     <option value="5">5 stars</option>
                                     <option value="4">4 stars</option>
                                     <option value="3">3 stars</option>
                                     <option value="2">2 stars</option>
                                     <option value="1">1 star</option>
                                     </select>
-                                </div>
-                                <input type="submit" value="Search" class="btn" onclick='submitForm()'>
-                            </div>         
+                            </div>
+                            <input type="submit" value="Search" class="btn" onclick='submitForm()'>
                         </div>
-                    </form>
-                </fieldset>
+                    </div>
+                </form>
+            </fieldset>
             <a href="./results_sample.html">
-               <button style="padding: 2em; font-size: 16px;">Show Sample Results</button>
+                <button style="padding: 2em; font-size: 16px;">Show Sample Results</button>
             </a>
         </div>
     </main>

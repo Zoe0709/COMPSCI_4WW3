@@ -266,12 +266,16 @@ nav a:hover {
     .wrapper .form .inputfield label {
         margin-bottom: 5px;
     }
-    .wrapper .title {
-        font-size: 20px;
+    .wrapper * {
+        font-size: 18px !important;
     }
     .wrapper .form .inputfield .btn {
         width: 80%;
         font-size: 20px;
+    }
+    .wrapper .form .inputfield .custom-file-upload {
+        width: 70%;
+        height: 40%;
     }
 }
 

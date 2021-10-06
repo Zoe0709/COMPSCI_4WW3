@@ -48,7 +48,7 @@
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a class='account default-nav' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
 
             </ul>
@@ -74,7 +74,7 @@
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a id='phone-navr' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a id='phone-navr' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
 
             </ul>
@@ -126,107 +126,102 @@
             <!-- The header of the page -->
             <h1 class='heading'>Submit a New Museum</h1>
 
-            <!-- The form that will take the information about the Museum -->
-            <form class="wrapper">
+            <!-- The form that will take the information about the Museum
+            (A temporary URI to submit the form information ) -->
+            <form class="wrapper" action='./index.html'>
 
-                <!-- A temporary URI to submit the form information -->
-                <form action='./index.html'>
+                <!-- The form is divided into 2 parts -->
+                <div class="form">
 
-
-
-                    <!-- The form is divided into 2 parts -->
-                    <div class="form">
-
-                        <!-- 
+                    <!-- 
                         
                         Part 1 of the form (museum information)
                     
                         -->
 
 
-                        <!-- The tittle for the first part in the form -->
-                        <div class="title">
-                            Museum Info
-                        </div>
+                    <!-- The tittle for the first part in the form -->
+                    <div class="title">
+                        Museum Info
+                    </div>
 
-                        <!-- **REQUIRED** The name of the museum **REQUIRED** -->
-                        <div class="inputfield">
-                            <label>Museum Name</label>
-                            <input type="text" class="input" placeholder='Museum name here' required>
-                        </div>
+                    <!-- **REQUIRED** The name of the museum **REQUIRED** -->
+                    <div class="inputfield">
+                        <label>Museum Name</label>
+                        <input type="text" class="input" placeholder='Museum name here' required>
+                    </div>
 
-                        <!-- The address of the museum -->
-                        <div class="inputfield">
-                            <label>Museum Address</label>
-                            <input type="text" class="input" placeholder='Museum address here'>
-                        </div>
+                    <!-- The address of the museum -->
+                    <div class="inputfield">
+                        <label>Museum Address</label>
+                        <input type="text" class="input" placeholder='Museum address here'>
+                    </div>
 
-                        <!-- The phone number of the museum -->
-                        <div class="inputfield">
-                            <label>Museum Phone Number</label>
-                            <input type="text" class="input" placeholder='Phone number here'>
-                        </div>
+                    <!-- The phone number of the museum -->
+                    <div class="inputfield">
+                        <label>Museum Phone Number</label>
+                        <input type="text" class="input" placeholder='Phone number here'>
+                    </div>
 
-                        <!-- The open hours of the museum -->
-                        <div class="inputfield">
-                            <label>Museum Open Hours</label>
-                            <input type="text" class="input" placeholder='Open hours here'>
-                        </div>
-
-
-                        <!-- A brief description the museum -->
-                        <div class="inputfield">
-                            <label>Museum Description</label>
-                            <input type="text" class="input" placeholder='Museum description here'>
-                        </div>
+                    <!-- The open hours of the museum -->
+                    <div class="inputfield">
+                        <label>Museum Open Hours</label>
+                        <input type="text" class="input" placeholder='Open hours here'>
+                    </div>
 
 
-                        <div class="inputfield">
+                    <!-- A brief description the museum -->
+                    <div class="inputfield">
+                        <label>Museum Description</label>
+                        <input type="text" class="input" placeholder='Museum description here'>
+                    </div>
 
-                            <label>Museum Image</label>
-                            <!-- Choosing an image for the museum -->
-                            <label class="custom-file-upload">
+
+                    <div class="inputfield">
+
+                        <label>Museum Image</label>
+                        <!-- Choosing an image for the museum -->
+                        <label class="custom-file-upload">
                                 <input type="file" class="custom-file-upload">
                                 Choose Image
                             </label>
-                        </div>
+                    </div>
 
 
-                        <!-- 
+                    <!-- 
                         
                             Part 2 of the form (museum information)
                     
                         -->
 
-                        <!-- The tittle for the second part in the form -->
-                        <div class="title" style="margin-top: 40px;">
-                            Museum Location
-                        </div>
+                    <!-- The tittle for the second part in the form -->
+                    <div class="title" style="margin-top: 40px;">
+                        Museum Location
+                    </div>
 
-                        <!-- The longitude of the musuem -->
-                        <div class="inputfield">
-                            <label>Longitude</label>
-                            <input id='longitude' type="number" step='0.001' name='longitude' placeholder='long' min='-90' max='90' class="input">
-                        </div>
+                    <!-- The longitude of the musuem -->
+                    <div class="inputfield">
+                        <label>Longitude</label>
+                        <input id='longitude' type="number" step='0.001' name='longitude' placeholder='long' min='-90' max='90' class="input">
+                    </div>
 
-                        <!-- The latitude of the musuem -->
-                        <div class="inputfield">
-                            <label>Latitude</label>
-                            <input id='latitude' type="number" step='0.001' name='latitude' placeholder='lat' min='-180' max='180' class="input">
-                        </div>
+                    <!-- The latitude of the musuem -->
+                    <div class="inputfield">
+                        <label>Latitude</label>
+                        <input id='latitude' type="number" step='0.001' name='latitude' placeholder='lat' min='-180' max='180' class="input">
+                    </div>
 
 
-                        <!-- 
+                    <!-- 
                         
                             The submit button
                     
                         -->
-                        <div class="inputfield">
-                            <input type="submit" value="Submit" class="btn">
-                        </div>
-
+                    <div class="inputfield">
+                        <input type="submit" value="Submit" class="btn">
                     </div>
-                </form>
+
+                </div>
             </form>
         </div>
     </main>
