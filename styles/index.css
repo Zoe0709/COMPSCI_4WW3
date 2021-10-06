@@ -1,0 +1,260 @@
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *             Styling the body            * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+body {
+    /* Changing the font to use Roboto */
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0;
+    /* background for the body */
+    background: #434343;
+    /* background: #24222b; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *       Styling the navigation bar        * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+/* Make the elements in the account class (sign in and sign up) be on the right*/
+
+.account {
+    float: right;
+}
+
+
+/* The element that is in the current class (which represents the active page) has #4A403A color.
+    The elements in the default-nav class (elements in the navigation bar that are not the current page)
+    have #fff color (white) 
+*/
+
+.current {
+    color: #4A403A;
+}
+
+.default-nav {
+    color: #fff;
+}
+
+
+/* Icons that show up in the navigation bar */
+
+i {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+/* navbar */
+
+nav {
+    height: 55px;
+    width: 100%;
+    background-color: #B68973;
+    position: fixed;
+}
+
+
+/* for ul elements inside nav */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* for li elements inside nav */
+
+nav li {
+    display: inline;
+}
+
+
+/* for a elements inside nav */
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0px;
+}
+
+
+/* when hovering over an anchor element that is inside nav */
+
+nav a:hover {
+    color: #A45D5D;
+    cursor: pointer;
+}
+
+
+/* @media query below will display phone-menue depending on the screen size. (please see below)
+    by default the navbar will not display the phone navigation menue.
+*/
+
+.phone-menue {
+    display: none;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *        Styling the main content         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.main-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 3rem;
+    margin-top: 35vh;
+}
+
+
+/*
+    For the element with an id main-header
+*/
+
+#main-header {
+    font-weight: 400;
+    font-size: 44px;
+    color: #A45D5D;
+    text-align: center;
+    margin: 4px;
+}
+
+
+/*
+    For the element with an id secondary-header
+*/
+
+#secondary-header {
+    font-weight: 300;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0.12rem;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *            Styling the footer           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #B68973;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *       Styling for smaller sizes         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+@media screen and (max-width: 600px) {
+    /* adjust the padding for the main content of the page */
+    .content {
+        padding: 0 2rem;
+    }
+    /* Hide the navigation element as we use div to display the navigation
+    menue for smaller sizes */
+    nav {
+        display: none;
+    }
+    /* display the class called phone-menue */
+    .phone-menue {
+        display: inline-block;
+        padding: 0;
+    }
+    .phone-menue li {
+        display: inline;
+    }
+    /* The anchor element with id phone-current (which represents the active page).*/
+    a#phone-current {
+        width: 100%;
+        text-indent: 25px;
+        color: #4A403A;
+    }
+    /* The anchor element that shows up on the right of the navigation bar.*/
+    a#phone-navr {
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+        color: #fff;
+    }
+    /* The anchor element that shows up on the left of the navigation bar.*/
+    a#phone-navl {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        color: #fff;
+    }
+    /* Hovering over any element in the navigation bar will change the color.*/
+    a#phone-current:hover,
+    a#phone-navl:hover,
+    a#phone-navr:hover {
+        color: #A45D5D;
+        cursor: pointer;
+    }
+    /* activating any element in the navigation bar will change the color.*/
+    a#phone-current:active,
+    a#phone-navl:active,
+    a#phone-navr:active {
+        color: #A45D5D;
+    }
+}

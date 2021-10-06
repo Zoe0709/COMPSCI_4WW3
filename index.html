@@ -2,62 +2,134 @@
 <html lang='en'>
 
 <head>
+    <!--- The tittle that shows in the tab of the web browser -->
     <title>Finding Museum | Home</title>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <!-- css -->
-    <link rel='stylesheet' type='text/css' href='./styles/main.css'>
 
-    <!-- google fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700">
+    <!-- referencing the css file -->
+    <link rel='stylesheet' type='text/css' href='./styles/index.css'>
 
-    <!-- google material icons -->
+    <!-- google icons for the navigation bar -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
 </head>
 
 <body>
 
-    <!-- navigation -->
+
+    <!-- Page header to contain the navigation bar -->
     <header>
-        <nav class='appbar'>
+        <!-- navigation -->
+        <nav>
+            <!-- 5 buttons in the navigation menue, which all use google icons -->
             <ul>
+
+                <!-- the Home anchor element -->
                 <li>
-                    <a href='./index.html' class='current default-nav'><i class='material-icons sm-18'>home</i>Home</a>
+                    <a class='current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
+
+                <!-- the Search anchor element -->
                 <li>
-                    <a href='./search.html' class='default-nav'><i class='material-icons sm-18'>search</i>Search</a>
+                    <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
+
+                <!-- the Submit anchor element -->
                 <li>
-                    <a href='./submission.html' class='default-nav'><i class='material-icons sm-18'>add</i>Submit</a>
+                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
+
+                <!-- the Sign Up anchor element -->
                 <li>
                     <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
+
+                <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>account_circle</i>Sign In</a>
+                    <a class='account default-nav' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
+
             </ul>
-            <a href="#" id="dropdown">Finding Museum</a>
+
+
         </nav>
+        <!-- navigation for smaller sizes -->
+        <div style="background-color: #B68973;">
+
+            <ul class="phone-menue">
+
+                <!-- the Home anchor element -->
+                <li>
+                    <a id='phone-current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign In anchor element -->
+                <li>
+                    <a id='phone-navr' href='#'><i class='material-icons sm-18'>login</i>Sign In</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Search anchor element -->
+                <li>
+                    <a id='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                </li>
+
+                <!-- break (New line) -->
+                <br>
+
+                <!-- the Sign Up anchor element -->
+                <li>
+                    <a id='phone-navr' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                </li>
+
+            </ul>
+
+            <!-- break (New line) -->
+            <br>
+
+            <ul class="phone-menue">
+
+                <!-- the Submit anchor element -->
+                <li>
+                    <a id='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+
+            </ul>
+
+        </div>
+
     </header>
 
-    <!-- main content -->
+    <!-- main content of the page -->
 
     <main class='main-section'>
         <div class='content'>
-            <div class='home'>
-                <h1 id='main-header'>MuseuM Master</h1>
-                <h2 id='secondary-header'>Discover Museums around the world. </h2>
-            </div>
+
+            <!-- The first header (name of our proekct) -->
+            <h1 id='main-header'>MuseuM Master</h1>
+
+            <!-- The secondary header (description of our proekct) -->
+            <h2 id='secondary-header'>Discover Museums around the world. </h2>
+
         </div>
     </main>
-    <footer class='footer'>
-        <div class='footnotes'>
-            <small>Abdullah AbdulMaksoud&emsp;&emsp;&nbsp;Zoe Ning</small>
-        </div>
-    </footer>
+
 </body>
+
+<!-- Footer of the page -->
+<footer>
+    <p>Authors: Zoe and Abdullah<br>
+</footer>
 
 
 
