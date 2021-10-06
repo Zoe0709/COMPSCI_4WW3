@@ -1,8 +1,24 @@
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *             Styling the body            * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
 body {
+    /* Changing the font to use Roboto */
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
-    scroll-padding-bottom: 40px;
-    background: #434343;
+    /* background for the body */
+    background: #2B2B28;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 table {
@@ -173,73 +189,101 @@ nav a#dropdown {
 .default-nav {
     color: #fff;
 }
-/* end navbar */
 
 
-/* Smaller sized screens */
+/* @media query below will display phone-menue depending on the screen size. (please see below)
+    by default the navbar will not display the phone navigation menue.
+*/
 
-@media screen and (max-width: 600px) {
-    .content {
-        padding: 0 2rem;
-    }
-    nav {
-        height: auto;
-        border-bottom: 0;
-        z-index: 9999 !important;
-    }
-    nav ul {
-        display: none;
-        height: auto;
-    }
-    nav li {
-        width: 100%;
-        float: left;
-        position: relative;
-    }
-    nav a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-        background: #070b24;
-        color: #BBB8B2;
-    }
-    nav a:hover {
-        color: #00FFFF;
-        cursor: pointer;
-    }
-    nav a:active {
-        color: #00FFFF;
-    }
-    nav a#dropdown:after {
-        content: "|||";
-        transform: rotate(-90deg);
-        width: 40px;
-        height: 40px;
-        display: inline-block;
-        position: absolute;
-        right: 5px;
-        top: 20px;
-    }
-    nav a#dropdown {
-        display: block;
-        background: #070b24;
-        color: #BBB8B2;
-        width: 100%;
-        position: relative;
-    }
-    .appbar:before,
-    .appbar:after {
-        content: "";
-        display: table;
-    }
-    .appbar:after {
-        clear: both;
-    }
-    .appbar {
-        zoom: 1;
-    }
+.phone-menue {
+    display: none;
 }
 
 
+/* end navbar */
 
 
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *            Styling the footer           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #B68973;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *    Styling for smaller sized screens    * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+@media screen and (max-width: 600px) {
+    /* adjust the padding for the main content of the page */
+    .content {
+        padding: 0 2rem;
+    }
+    /* Hide the navigation element as we use div to display the navigation
+    menue for smaller sizes */
+    nav {
+        display: none;
+    }
+    /* display the class called phone-menue */
+    .phone-menue {
+        display: inline-block;
+        padding: 0;
+    }
+    .phone-menue li {
+        display: inline;
+    }
+    /* The anchor element that shows up on the right of the navigation bar.*/
+    .phone-navr {
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+        color: #fff;
+    }
+    /* The anchor element that shows up on the left of the navigation bar.*/
+    .phone-navl {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        color: #fff;
+    }
+    /* The anchor element with id phone-current (which represents the active page).*/
+    .phone-current {
+        color: #4A403A;
+    }
+    /* Hovering over any element in the navigation bar will change the color.*/
+    .phone-current:hover,
+    .phone-navl:hover,
+    .phone-navr:hover {
+        color: #A45D5D;
+        cursor: pointer;
+    }
+    /* activating any element in the navigation bar will change the color.*/
+    .phone-current:active,
+    .phone-navl:active,
+    .phone-navr:active {
+        color: #A45D5D;
+    }
+}

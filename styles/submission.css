@@ -336,7 +336,7 @@ footer {
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * *                                         * * * * * * * * * * *
- * * * * * * * * * *       Styling for smaller sizes         * * * * * * * * * * *
+ * * * * * * * * * *    Styling for smaller sized screens    * * * * * * * * * * *
  * * * * * * * * * *                                         * * * * * * * * * * * 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -361,37 +361,35 @@ footer {
     .phone-menue li {
         display: inline;
     }
-    /* The anchor element with id phone-current (which represents the active page).*/
-    a#phone-current {
-        width: 100%;
-        text-indent: 25px;
-        color: #4A403A;
-    }
     /* The anchor element that shows up on the right of the navigation bar.*/
-    a#phone-navr {
+    .phone-navr {
         position: absolute;
         display: inline-block;
         right: 20px;
         color: #fff;
     }
     /* The anchor element that shows up on the left of the navigation bar.*/
-    a#phone-navl {
+    .phone-navl {
         text-align: left;
         width: 100%;
         text-indent: 25px;
         color: #fff;
     }
+    /* The anchor element with id phone-current (which represents the active page).*/
+    .phone-current {
+        color: #4A403A;
+    }
     /* Hovering over any element in the navigation bar will change the color.*/
-    a#phone-current:hover,
-    a#phone-navl:hover,
-    a#phone-navr:hover {
+    .phone-current:hover,
+    .phone-navl:hover,
+    .phone-navr:hover {
         color: #A45D5D;
         cursor: pointer;
     }
     /* activating any element in the navigation bar will change the color.*/
-    a#phone-current:active,
-    a#phone-navl:active,
-    a#phone-navr:active {
+    .phone-current:active,
+    .phone-navl:active,
+    .phone-navr:active {
         color: #A45D5D;
     }
 }
