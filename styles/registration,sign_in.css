@@ -1,0 +1,476 @@
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *             Styling the body            * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+body {
+    /* Changing the font to use Roboto */
+    font-family: 'Roboto', Helvetica, sans-serif;
+    margin: 0;
+    /* background for the body */
+    background: #2B2B28;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *       Styling the navigation bar        * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+/* Make the elements in the account class (sign in and sign up) be on the right*/
+
+.account {
+    float: right;
+}
+
+
+/* The element that is in the current class (which represents the active page) has #4A403A color.
+    The elements in the default-nav class (elements in the navigation bar that are not the current page)
+    have #fff color (white) 
+*/
+
+.current {
+    color: #4A403A;
+}
+
+.default-nav {
+    color: #fff;
+}
+
+
+/* Icons that show up in the navigation bar */
+
+i {
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+
+/* navbar */
+
+nav {
+    height: 55px;
+    width: 100%;
+    background-color: #B68973;
+    position: fixed;
+}
+
+
+/* for ul elements inside nav */
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+
+/* for li elements inside nav */
+
+nav li {
+    display: inline;
+}
+
+
+/* for a elements inside nav */
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    font-weight: regular;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 0px;
+}
+
+
+/* when hovering over an anchor element that is inside nav */
+
+nav a:hover {
+    color: #A45D5D;
+    cursor: pointer;
+}
+
+
+/* @media query below will display phone-menue depending on the screen size. (please see below)
+    by default the navbar will not display the phone navigation menue.
+*/
+
+.phone-menue {
+    display: none;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *        Styling the main content         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+.main-section {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 3rem;
+}
+
+
+/* Styling the header of the page (submit a new museum)  */
+
+.heading {
+    font-weight: 300;
+    font-size: 34px;
+    color: #fff;
+    text-align: center;
+    margin-top: 70px;
+    border-bottom: double #CC9B6D;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *         Styling the wrapper form        * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+
+/* Styling the form box  */
+
+.wrapper {
+    max-width: 500px;
+    background: #B68973;
+    margin: 100px auto;
+    /* adds a shadow for the form box (makes it look nicer)  */
+    box-shadow: 2px 2px 4px #2B2B28;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+
+/* Styling the tittles for the 2 parts of the form  */
+
+.wrapper .title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #2B2B28;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.wrapper .form {
+    width: 100%;
+}
+
+.wrapper .form .inputfield {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+
+/* Styling the labels of the form  */
+
+.wrapper .form .inputfield label {
+    width: 200px;
+    color: #2B2B28;
+    margin-right: 10px;
+    font-size: 19px;
+}
+
+.wrapper .form .inputfield .input {
+    width: 100%;
+    outline: none;
+    border: 1px solid #A45D5D;
+    font-size: 19px;
+    padding: 8px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    height: 30px;
+}
+
+
+/* The Register button */
+
+.wrapper .form .inputfield .btn {
+    margin-left: 20%;
+    width: 60%;
+    padding: 8px 10px;
+    font-size: 24px;
+    border: 0px;
+    background: #2B2B28;
+    color: #B68973;
+    cursor: pointer;
+    border-radius: 6px;
+    outline: none;
+    height: 60px;
+}
+
+
+/* When the Register/ submit button is hovered over */
+
+.wrapper .form .inputfield .btn:hover {
+    background: #A45D5D;
+}
+
+
+/* margin for the last element in the form */
+
+.wrapper .form .inputfield:last-child {
+    margin-bottom: 0;
+}
+
+
+/* different style for smaller size */
+
+@media (max-width:420px) {
+    .wrapper .form .inputfield {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrapper .form .inputfield label {
+        margin-bottom: 5px;
+    }
+    .wrapper .title {
+        font-size: 20px;
+    }
+    .wrapper .form .inputfield .btn {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+
+/* The custom select of geneder */
+
+.wrapper .form .inputfield .custom_select {
+    position: relative;
+    width: 108%;
+    height: 50px;
+}
+
+
+/* The arrow of the custom select of gender */
+
+.wrapper .form .inputfield .custom_select:before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #A45D5D transparent transparent transparent;
+    pointer-events: none;
+}
+
+
+/* When an Item is selected in the gender select*/
+
+.wrapper .form .inputfield .custom_select select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    border: 0px;
+    padding: 8px 10px;
+    font-size: 20px;
+    border: 1px solid #A45D5D;
+    border-radius: 3px;
+}
+
+
+/* when the gender box is selected */
+
+.wrapper .form .inputfield .input:focus,
+.wrapper .form .inputfield .custom_select select:focus {
+    border: 3px solid #A45D5D;
+}
+
+
+/* 
+ 
+   The terms and condition section   
+
+ */
+
+.wrapper .form .inputfield .check {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+
+/* The color for the text */
+
+.wrapper .form .inputfield p {
+    color: #2B2B28;
+    font-size: 18px;
+}
+
+
+/* Styling the checkbox */
+
+.wrapper .form .inputfield .check input[type="checkbox"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+
+/* Styling the checkmark */
+
+.wrapper .form .inputfield .check .checkmark {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #2B2B28;
+    display: block;
+    position: relative;
+}
+
+.wrapper .form .inputfield .check .checkmark:before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    width: 5px;
+    height: 2px;
+    border: 2px solid;
+    border-color: transparent transparent #fff #fff;
+    transform: rotate(-45deg);
+    display: none;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark {
+    background: #A45D5D;
+}
+
+.wrapper .form .inputfield .check input[type="checkbox"]:checked~.checkmark:before {
+    display: block;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *            Styling the footer           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: #B68973;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
+}
+
+
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *       Styling for smaller sizes         * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+@media screen and (max-width: 600px) {
+    /* adjust the padding for the main content of the page */
+    .content {
+        padding: 0 2rem;
+    }
+    /* Hide the navigation element as we use div to display the navigation
+    menue for smaller sizes */
+    nav {
+        display: none;
+    }
+    /* display the class called phone-menue */
+    .phone-menue {
+        display: inline-block;
+        padding: 0;
+    }
+    .phone-menue li {
+        display: inline;
+    }
+    /* The anchor element with id phone-current (which represents the active page).*/
+    a#phone-current {
+        width: 100%;
+        text-indent: 25px;
+        color: #4A403A;
+    }
+    /* The anchor element that shows up on the right of the navigation bar.*/
+    a#phone-navr {
+        position: absolute;
+        display: inline-block;
+        right: 20px;
+        color: #fff;
+    }
+    /* The anchor element that shows up on the left of the navigation bar.*/
+    a#phone-navl {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        color: #fff;
+    }
+    /* Hovering over any element in the navigation bar will change the color.*/
+    a#phone-current:hover,
+    a#phone-navl:hover,
+    a#phone-navr:hover {
+        color: #A45D5D;
+        cursor: pointer;
+    }
+    /* activating any element in the navigation bar will change the color.*/
+    a#phone-current:active,
+    a#phone-navl:active,
+    a#phone-navr:active {
+        color: #A45D5D;
+    }
+}
