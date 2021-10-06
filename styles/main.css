@@ -1,8 +1,13 @@
 body {
+    /* Changing the font to use Roboto */
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
-    scroll-padding-bottom: 40px;
+    /* background for the body */
     background: #434343;
+    /* background: #24222b; */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 table {
@@ -157,66 +162,6 @@ i {
     margin-bottom: 8px;
 }
 
-
-/*
-
-.formentry {
-    margin: 20px auto;
-    padding: 40px;
-    /*box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
-    margin-top: 20%;
-    color: #00FFFF;
-    background-color: #070b24;
-    max-width: 700px;
-    box-shadow: 1px 1px 2px #00FFFF;
-    border-radius: 12px;
-    align-content: center;
-}
-
-.fieldsinput {
-    margin: 3%;
-}
-
-.fieldsinput label {
-    color: #fff;
-    margin-right: 10px;
-    font-size: 20px;
-}
-
-.fieldsinput input,
-.fieldsinput select {
-    outline: none;
-    position: relative;
-    margin-left: 10px;
-    border: 2px solid #162075;
-    font-size: 20px;
-    padding: 8px 18px;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-}
-
-.fieldsinput input:focus,
-.fieldsinput select:focus {
-    outline: none;
-    border: 2px solid #00FFFF;
-}
-
-.submitbuttons input {
-    position: relative;
-    border: none;
-    font-size: 20px;
-    padding: 12px 100px;
-    border-radius: 7px;
-    transition: all 0.3s ease;
-    align-self: center;
-}
-
-
-
-
-
-*/
-
 .legend {
     font-weight: bold;
     text-align: left;
@@ -226,42 +171,6 @@ i {
     text-transform: uppercase;
     margin-bottom: 5%;
 }
-
-/*.fake_fieldset {
-    border: 2px groove ButtonFace;
-    border-top-width: 0;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding: .35em .625em .75em;
-    margin-top: 3em;
-    position: relative;
-}
-
-.fake_legend {
-    margin-top: -1em;
-}
-
-.fake_fieldset.edited {
-    padding: 0;
-    padding-top: 1px;  no collapsed margin 
-}
-
-.fake_fieldset.edited .fake_fieldset.container {
-    margin: 0;
-    border: 0;
-    margin-top: 10px;
-}
-
-.fake_legend.edited {
-    display: table;
-    width: 100%;
-    font-weight: bold;
-    text-align: left;
-    font-size: 28px;
-    color: #A45D5D;
-    -webkit-text-stroke: 1px #2B2B28;
-}
-*/
 
 .locationbtn {
     text-decoration: none;
@@ -397,23 +306,26 @@ nav a#dropdown {
     }
 }
 
-.footer {
-    clear: both;
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    bottom: 0;
-    background-color: #4A403A;
-    z-index: 80;
-}
 
-.footnotes {
+/* 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * *
+ * * * * * * * * * *            Styling the footer           * * * * * * * * * * *
+ * * * * * * * * * *                                         * * * * * * * * * * * 
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+ */
+
+footer {
     text-align: center;
-    margin-top: 10px;
-    width: 100%;
-    height: 100px;
-    position: fixed;
-    color: #fff;
+    padding: 3px;
+    background-color: #B68973;
+    bottom: 0;
+    color: white;
+    margin-top: auto;
 }
 
 
@@ -651,7 +563,6 @@ The Wrapper for the Registration form
 }
 
 
-
 /* Below is for "choose image" button on submission page */
 
 input[type="file"] {
@@ -680,98 +591,3 @@ input[type="file"] {
     background: #A45D5D;
     cursor: pointer;
 }
-
-/*input[type=file]::-ms-browse {
-    border: 2px solid #6c5ce7;
-    padding: .2em .4em;
-    border-radius: .2em;
-    background-color: #a29bfe;
-    display: none;
-}
-
-input[type=file]::-webkit-file-upload-button {
-    border: 0px;
-    padding: 8px 10px;
-    border-radius: 6px;
-    background: #2B2B28;
-    transition: 1s;
-    width: 70%;
-    color: #B68973;
-    margin-left: -1em;
-    font-size: 24px;
-    cursor: pointer;
-    outline: none;
-    height: 60px;
-    display: inline-block;
-}
-
-input[type=file]::file-selector-button {
-    border: 2px solid #6c5ce7;
-    padding: .2em .4em;
-    border-radius: .2em;
-    background-color: #a29bfe;
-    transition: 1s;
-}
-
-input[type=file]::-ms-browse:hover {
-    background-color: #81ecec;
-    border: 2px solid #00cec9;
-}
-
-input[type=file]::-webkit-file-upload-button:hover {
-    background-color: #81ecec;
-    border: 2px solid #00cec9;
-}
-
-input[type=file]::file-selector-button:hover {
-  background-color: #81ecec;
-  border: 2px solid #00cec9;
-}
-*/
-
-/*============================*/
-
-
-/*.custom-file-input::-webkit-file-upload-button {
-    visibility: hidden;
-}
-
-.custom-file-input:before {
-    
-    margin-left: 10%;
-    text-align: center;
-    width: 70%; 
-    height: 25px;
-    padding: 20px 20px;
-    
-
-    content: 'Choose Image';
-    display: inline-block;
-    background: #2B2B28;
-
-    outline: none;
-    cursor: pointer;
-
-    border: 0px;
-    border-radius: 6px;
-
-
-    color: #B68973;
-    text-align: center;
-    font-weight: 700;
-    font-size: 24px;
-}
-
-.custom-file-input:hover { 
-    background: #A45D5D;
-    cursor: pointer;
-}*/
-
-
-
-
-
-
-
-
-
