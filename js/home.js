@@ -1,3 +1,4 @@
+// New array containing all images
 var images = new Array(
     './background_photos/img1.jpeg',
     './background_photos/img2.jpeg',
@@ -20,6 +21,7 @@ var images = new Array(
     './background_photos/img19.jpeg'
 );
 
+// Change images repeatedly every five seconds
 var slider = setInterval(function() {
     document.getElementsByClassName('backImg')[0].setAttribute('style', 'background-image: url("'+images[0]+'")');
     images.splice(images.length, 0, images[0]);
