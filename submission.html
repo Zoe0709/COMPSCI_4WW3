@@ -154,12 +154,6 @@
                         <input type="text" class="input" placeholder='Museum address here'>
                     </div>
 
-                    <!-- The phone number of the museum -->
-                    <div class="inputfield">
-                        <label>Museum Phone Number</label>
-                        <input type="text" class="input" placeholder='Phone number here'>
-                    </div>
-
                     <!-- The open hours of the museum -->
                     <div class="inputfield">
                         <label>Museum Open Hours</label>
@@ -170,7 +164,12 @@
                     <!-- A brief description the museum -->
                     <div class="inputfield">
                         <label>Museum Description</label>
-                        <input type="text" class="input" placeholder='Museum description here'>
+
+                        <!--
+                            we are going to use textarea instead as it makes the description box look better 
+                            <input type="text" class="input" placeholder='Museum description here'> 
+                        -->
+                        <textarea class="textarea" placeholder='Description (max 500 charcters)' maxlength="200"></textarea>
                     </div>
 
 
@@ -179,11 +178,20 @@
                         <label>Museum Image</label>
                         <!-- Choosing an image for the museum -->
                         <label class="custom-file-upload">
-                                <input type="file" class="custom-file-upload">
+                                <input type="file" accept="image/*" class="custom-file-upload">
                                 Choose Image
                             </label>
                     </div>
 
+                    <div class="inputfield">
+
+                        <label>Museum Video</label>
+                        <!-- Choosing an image for the museum -->
+                        <label class="custom-file-upload">
+                                <input type="file" accept="video/*" class="custom-file-upload">
+                                Choose Video
+                            </label>
+                    </div>
 
                     <!-- 
                         
@@ -231,4 +239,5 @@
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>

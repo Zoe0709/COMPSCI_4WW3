@@ -22,46 +22,6 @@ body {
 }
 
 
-/* Styling the background images */
-
-.backImg {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    position: relative;
-    display: flex;
-}
-
-
-/* Change the opacity of background image */
-
-.backImg::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgba(0,0,0,0.6);
-}
-
-
-/* Avoid the change of opacity affecting text in h1 */
-
-h1 {
-    position: relative;
-    text-align: center;
-}
-
-
-/* Avoid the change of opacity affecting text in h2 */
-
-h2 {
-    position: relative;
-    text-align: center;
-}
-
-
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -211,7 +171,6 @@ nav a:hover {
 }
 
 
-
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -231,8 +190,6 @@ footer {
     bottom: 0;
     color: white;
     margin-top: auto;
-    position: relative;
-    text-align: center;
 }
 
 
