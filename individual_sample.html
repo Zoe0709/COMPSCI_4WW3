@@ -165,24 +165,24 @@
                 </video>
 
                 <!-- Detailed information of museum -->
-                <div class='museum-info'>
+                <div class='museum-info' itemscope itemtype="http://schema.org/Place">
 
                     <!-- Name of museum -->
-                    <h2 class='heading'>Aga Khan Museum</h2>
+                    <h2 itemprop="name" class='heading'>Aga Khan Museum</h2>
                     <!-- Address of museum -->
-                    <p class='subheading-t'>Address: </p>
+                    <p itemprop="address" class='subheading-t'>Address: </p>
                     <!-- Details use smaller and lighter font to display -->
-                    <p class='subheading-p'>77 Wynford Drive, Toronto, Ontario M3C 1K1</p>
+                    <p itemprop="address" class='subheading-p'>77 Wynford Drive, Toronto, Ontario M3C 1K1</p>
                     <!-- Phone number of museum -->
-                    <p class='subheading-t'>Phone: </p>
+                    <p itemprop="telephone" class='subheading-t'>Phone: </p>
                     <p class='subheading-p'>+1 (416)-646-4677</p>
                     <!-- Open hours of museum -->
-                    <p class='subheading-t'>Open Hours: </p>
-                    <p class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
-                    <p class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-t'>Open Hours: </p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
                     <!-- Brief description of museum -->
-                    <p class='subheading-t'>Description: </p>
-                    <p class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
+                    <p itemprop="description" class='subheading-t'>Description: </p>
+                    <p itemprop="description" class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
                         the world.</p>
                 </div>
             </p>
@@ -198,34 +198,34 @@
                 </tr>
 
                 <!-- The first row of the table (except the header row) -->
-                <tr>
+                <tr itemscope itemtype="https://schema.org/Review">
                     <!-- Grid for username of the first row -->
-                    <td>Alecia Danniel</td>
+                    <td itemprop="author">Alecia Danniel</td>
                     <!-- Grid for rating of the first row -->
-                    <td>5 stars</td>
+                    <td itemprop="reviewRating">5 stars</td>
                     <!-- Grid for review of the first row -->
-                    <td>Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
+                    <td itemprop="reviewBody">Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
                 </tr>
 
                 <!-- The second row of the table -->
-                <tr>
-                    <td>Suzan Evanson</td>
-                    <td>4 stars</td>
-                    <td>The museum is designed well and they have a large collection of books and manuscripts.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Suzan Evanson</td>
+                    <td itemprop="reviewRating">4 stars</td>
+                    <td itemprop="reviewBody">The museum is designed well and they have a large collection of books and manuscripts.</td>
                 </tr>
 
                 <!-- The third row of the table -->
-                <tr>
-                    <td>Miranda Walt Dalton</td>
-                    <td>4 stars</td>
-                    <td>A great place to experience the history of art and culture of medieval Islamic world.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Miranda Walt Dalton</td>
+                    <td itemprop="reviewRating">4 stars</td>
+                    <td itemprop="reviewBody">A great place to experience the history of art and culture of medieval Islamic world.</td>
                 </tr>
 
                 <!-- The fourth row of the table -->
-                <tr>
-                    <td>Sebastian Cobb</td>
-                    <td>3 stars</td>
-                    <td>Too expensive for such a limited collection. Not worth the time and money.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Sebastian Cobb</td>
+                    <td itemprop="reviewRating">3 stars</td>
+                    <td itemprop="reviewBody">Too expensive for such a limited collection. Not worth the time and money.</td>
                 </tr>
             </table>
         </div>
