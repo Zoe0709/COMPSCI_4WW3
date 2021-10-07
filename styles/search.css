@@ -399,6 +399,8 @@ The Wrapper for the Registration form
     .wrapper .form .inputfield a {
         width: 80% !important;
         margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .wrapper .form .inputfield .btn {
         font-size: 20px;
