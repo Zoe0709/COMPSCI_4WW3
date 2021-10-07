@@ -124,8 +124,10 @@
             <!-- The screenshot of Aga Khan Museum on a map -->
             <a href='./screenshots/aga_khan_map.jpeg'><img src='./screenshots/aga_khan_map.jpeg' alt="Aga Khan Museum"></a>
 
-            <!-- Include a photo of Aga Khan Museum -->
-            <p><img src="./screenshots/aga_khan.jpeg" style="float:right;width:50%;margin-top:5em;">
+            <!-- The sample video of Aga Khan Museum -->
+            <p><video style="float:right;width:50%;margin-top:5em;" controls>
+                  <source src="./img_and_video/AgaKhanM.mp4" type="video/mp4">
+                </video>
 
                 <!-- Detailed information of museum -->
                 <div class='museum-info'>
@@ -191,6 +193,16 @@
                     <td>Too expensive for such a limited collection. Not worth the time and money.</td>
                 </tr>
             </table>
+        </div>
+        <div>
+            <!-- picture and source tag part, but not sure if I'm doing it correctly -->
+            <picture>
+                <source media="(min-width: 800px)" srcset="./screenshots/aga_khan.jpeg">
+                <source media="(min-width: 450px)" srcset="./screenshots/aga_khan2.jpeg">
+                <img src="./screenshots/aga_khan3.jpeg" alt="Aga Khan Museum Outlook" style="width:auto;">
+            </picture>
+            <!-- Original image code which replaced by the video -->
+            <!-- <img src="./screenshots/aga_khan.jpeg" style="float:right;width:50%;margin-top:5em;"> -->
         </div>
     </main>
 </body>
