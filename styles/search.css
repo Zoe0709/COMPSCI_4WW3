@@ -98,6 +98,7 @@ i {
 
 
 /* Styling the caption of fieldset grouping */
+
 .legend {
     font-weight: bold;
     text-align: left;
@@ -190,7 +191,6 @@ nav a:active {
 
 
 /* end navbar */
-
 
 
 /* 
@@ -371,7 +371,7 @@ The Wrapper for the Registration form
     cursor: pointer;
     border-radius: 6px;
     outline: none;
-    height: 60px;
+    height: 50px;
 }
 
 
@@ -396,8 +396,11 @@ The Wrapper for the Registration form
     .wrapper .title {
         font-size: 20px;
     }
+    .wrapper .form .inputfield a {
+        width: 80% !important;
+        margin-top: 20px;
+    }
     .wrapper .form .inputfield .btn {
-        width: 80%;
         font-size: 20px;
     }
 }
