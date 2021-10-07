@@ -7,14 +7,51 @@
     <!--- The title that shows in the tab of the web browser -->
     <title>Finding Museum | Museum Details</title>
 
-    <!-- Use the viewport meta tag to control layout and the zoom level on mobile browsers -->
+    <meta charset="UTF-8">
+    <!-- The viewport meta tag for the responsiveness and scale -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    
+    <meta name="Description" content="A website to search museum" />
+    <meta name="author" content="Abdullah and Zoe" />
+    <meta name="keywords" content="Museum, search, rate, review" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
+
     <!-- Referencing the css file -->
     <link rel='stylesheet' type='text/css' href='./styles/individual_sample.css'>
 
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- icon for homescreens -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo-16x16.png">
+
+
+    <!-- Twitter Cards Metadata-->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@MuseuMaster" />
+    <meta name="twitter:creator" content="@AbdullahAndZoe">
+    <meta name="twitter:title" content="Museum">
+    <meta name="twitter:description" content="Beautiful Museum">
+    <meta name="twitter:image" content="https://zoe0709.github.io/screenshots/aga_khan_map.jpeg">
+
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="MuseuMaster" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://zoe0709.github.io/" />
+
+    <!--Open Graph properties -->
+    <meta property="og:image" content="https://zoe0709.github.io/screenshots/aga_khan_map.jpeg" />
+    <meta property="og:image:secure_url" content="https://zoe0709.github.io/screenshots/aga_khan_map.jpeg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="500" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:image:alt" content="Picture of the museum" />
+    <meta property="og:description" content="A museum in Canada" />
+
 </head>
 
 <body>
@@ -64,10 +101,10 @@
                 <!-- the Home anchor element -->
                 <li>
                     <a class='phone-navl' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                    <!-- break (New line) -->
+                    <br>
                 </li>
 
-                <!-- break (New line) -->
-                <br>
 
                 <!-- the Sign In anchor element -->
                 <li>
@@ -84,10 +121,10 @@
                 <!-- the Search anchor element -->
                 <li>
                     <a class='phone-navl phone-current' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                    <!-- break (New line) -->
+                    <br>
                 </li>
 
-                <!-- break (New line) -->
-                <br>
 
                 <!-- the Sign Up anchor element -->
                 <li>
@@ -130,24 +167,24 @@
                 </video>
 
                 <!-- Detailed information of museum -->
-                <div class='museum-info'>
+                <div class='museum-info' itemscope itemtype="http://schema.org/Place">
 
                     <!-- Name of museum -->
-                    <h2 class='heading'>Aga Khan Museum</h2>
+                    <h2 itemprop="name" class='heading'>Aga Khan Museum</h2>
                     <!-- Address of museum -->
-                    <p class='subheading-t'>Address: </p>
+                    <p itemprop="address" class='subheading-t'>Address: </p>
                     <!-- Details use smaller and lighter font to display -->
-                    <p class='subheading-p'>77 Wynford Drive, Toronto, Ontario M3C 1K1</p>
+                    <p itemprop="address" class='subheading-p'>77 Wynford Drive, Toronto, Ontario M3C 1K1</p>
                     <!-- Phone number of museum -->
-                    <p class='subheading-t'>Phone: </p>
+                    <p itemprop="telephone" class='subheading-t'>Phone: </p>
                     <p class='subheading-p'>+1 (416)-646-4677</p>
                     <!-- Open hours of museum -->
-                    <p class='subheading-t'>Open Hours: </p>
-                    <p class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
-                    <p class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-t'>Open Hours: </p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
                     <!-- Brief description of museum -->
-                    <p class='subheading-t'>Description: </p>
-                    <p class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
+                    <p itemprop="description" class='subheading-t'>Description: </p>
+                    <p itemprop="description" class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
                         the world.</p>
                 </div>
             </p>
@@ -163,34 +200,34 @@
                 </tr>
 
                 <!-- The first row of the table (except the header row) -->
-                <tr>
+                <tr itemscope itemtype="https://schema.org/Review">
                     <!-- Grid for username of the first row -->
-                    <td>Alecia Danniel</td>
+                    <td itemprop="author">Alecia Danniel</td>
                     <!-- Grid for rating of the first row -->
-                    <td>5 stars</td>
+                    <td itemprop="reviewRating">5 stars</td>
                     <!-- Grid for review of the first row -->
-                    <td>Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
+                    <td itemprop="reviewBody">Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
                 </tr>
 
                 <!-- The second row of the table -->
-                <tr>
-                    <td>Suzan Evanson</td>
-                    <td>4 stars</td>
-                    <td>The museum is designed well and they have a large collection of books and manuscripts.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Suzan Evanson</td>
+                    <td itemprop="reviewRating">4 stars</td>
+                    <td itemprop="reviewBody">The museum is designed well and they have a large collection of books and manuscripts.</td>
                 </tr>
 
                 <!-- The third row of the table -->
-                <tr>
-                    <td>Miranda Walt Dalton</td>
-                    <td>4 stars</td>
-                    <td>A great place to experience the history of art and culture of medieval Islamic world.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Miranda Walt Dalton</td>
+                    <td itemprop="reviewRating">4 stars</td>
+                    <td itemprop="reviewBody">A great place to experience the history of art and culture of medieval Islamic world.</td>
                 </tr>
 
                 <!-- The fourth row of the table -->
-                <tr>
-                    <td>Sebastian Cobb</td>
-                    <td>3 stars</td>
-                    <td>Too expensive for such a limited collection. Not worth the time and money.</td>
+                <tr itemscope itemtype="https://schema.org/Review">
+                    <td itemprop="author">Sebastian Cobb</td>
+                    <td itemprop="reviewRating">3 stars</td>
+                    <td itemprop="reviewBody">Too expensive for such a limited collection. Not worth the time and money.</td>
                 </tr>
             </table>
         </div>
@@ -215,8 +252,9 @@
 <!-- Footer of the page -->
 <footer>
     <!-- Include a google icon in front of authors -->
-    <i class='material-icons sm-18'>account_circle</i><a>Authors: Zoe and Abdullah</a>
+    <p><i class='material-icons sm-18'>account_circle</i>Authors: Zoe and Abdullah</p>
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>

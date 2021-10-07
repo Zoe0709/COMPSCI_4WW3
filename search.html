@@ -7,14 +7,28 @@
     <!--- The title that shows in the tab of the web browser -->
     <title>Finding Museum | Search</title>
 
-    <!-- Use the viewport meta tag to control layout and the zoom level on mobile browsers -->
+    <meta charset="UTF-8">
+    <!-- The viewport meta tag for the responsiveness and scale -->
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="author" content="Abdullah and Zoe" />
+    <meta name="keywords" content="Museum, search, rate, review" />
+
+    <meta name="Description" content="A website to search museum" />
+
+    <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
     <!-- Referencing the css file -->
     <link rel='stylesheet' type='text/css' href='./styles/search.css'>
 
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- icon for homescreens -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./logo-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./logo-16x16.png">
 </head>
 
 <body>
@@ -63,10 +77,10 @@
                 <!-- the Home anchor element -->
                 <li>
                     <a class='phone-navl' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                    <!-- break (New line) -->
+                    <br>
                 </li>
 
-                <!-- break (New line) -->
-                <br>
 
                 <!-- the Sign In anchor element -->
                 <li>
@@ -83,10 +97,10 @@
                 <!-- the Search anchor element -->
                 <li>
                     <a class='phone-navl phone-current' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                    <!-- break (New line) -->
+                    <br>
                 </li>
 
-                <!-- break (New line) -->
-                <br>
 
                 <!-- the Sign Up anchor element -->
                 <li>
@@ -141,7 +155,7 @@
                             <input type="text" name="museumname" class="input" placeholder='Museum name here'>
 
                             <!-- The search button, click to jump to results sample page -->
-                            <a href="./results_sample.html">
+                            <a href="./results_sample.html" class="btn" style="padding: 0;">
                                 <input type="submit" value="Search" class="btn" onclick='submitForm()'>
                             </a>
                         </div>
@@ -173,14 +187,12 @@
                                     <option value="1">1 star</option>
                                     </select>
                             </div>
-                            <div>
 
-                                <!-- The submit button, click to jump to results sample page -->
-                                <a href="./results_sample.html">
+                            <!-- The submit button, click to jump to results sample page -->
+                            <a href="./results_sample.html" class="btn" style="padding: 0;">
 
-                                    <input type="submit" onclick='submitForm()' class="btn">
-                                </a>
-                            </div>
+                                <input type="submit" value="Search" onclick='submitForm()' class="btn">
+                            </a>
 
                         </div>
                     </div>
@@ -194,8 +206,9 @@
 <!-- Footer of the page -->
 <footer>
     <!-- Include a google icon in front of authors -->
-    <i class='material-icons sm-18'>account_circle</i><a>Authors: Zoe and Abdullah</a>
+    <p><i class='material-icons sm-18'>account_circle</i>Authors: Zoe and Abdullah</p>
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>
