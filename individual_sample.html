@@ -195,14 +195,19 @@
             </table>
         </div>
         <div>
-            <!-- picture and source tag part, but not sure if I'm doing it correctly -->
+            <p class='subheading-t'>Add-on Task 2.2: Use the HTML5 picture and source tags to provide images customized to the screen size.</p>
+            <p class='subheading-p'>Image displaying below differs when screen size changes.</p>
+            <!-- picture and source tag part -->
             <picture>
+                <!-- On screen with size greater than 800px, image aga_khan.jpeg shows up -->
+                <source type="image/webp" media="(min-width: 800px)" srcset="./screenshots/aga_khan.webp">
                 <source media="(min-width: 800px)" srcset="./screenshots/aga_khan.jpeg">
+                <!-- On screen with size greater than 450px, image aga_khan2.jpeg shows up -->
+                <source type="image/webp" media="(min-width: 450px)" srcset="./screenshots/aga_khan2.webp">
                 <source media="(min-width: 450px)" srcset="./screenshots/aga_khan2.jpeg">
+                <!-- On screen with size smaller than 450px, image aga_khan3.jpeg shows up -->
                 <img src="./screenshots/aga_khan3.jpeg" alt="Aga Khan Museum Outlook" style="width:auto;">
             </picture>
-            <!-- Original image code which replaced by the video -->
-            <!-- <img src="./screenshots/aga_khan.jpeg" style="float:right;width:50%;margin-top:5em;"> -->
         </div>
     </main>
 </body>

@@ -136,26 +136,30 @@
 
                     <!-- The first name of the user -->
                     <div class="inputfield">
-                        <label>First Name</label>
-                        <input type="text" class="input" placeholder='First name here...'>
+                        <label>First Name:</label>
+                        <!-- Text box for first name -->
+                        <input type="text" class="input" placeholder='First name here'>
                     </div>
 
                     <!-- The last name of the user -->
                     <div class="inputfield">
-                        <label>Last Name</label>
-                        <input type="text" class="input" placeholder='Last name here...'>
+                        <label>Last Name:</label>
+                        <!-- Text box for last name -->
+                        <input type="text" class="input" placeholder='Last name here'>
                     </div>
 
                     <!-- **REQUIRED** The username of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label>Username</label>
-                        <input type="text" class="input" placeholder='Username here...' required>
+                        <label>Username:</label>
+                        <!-- Text box for username -->
+                        <input type="text" class="input" placeholder='Username here' required>
                     </div>
 
                     <!-- **REQUIRED** The password of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label>Password</label>
-                        <input type="password" class="input" placeholder='Password here...' required>
+                        <label>Password:</label>
+                        <!-- Text box for password -->
+                        <input type="password" class="input" placeholder='Password here' required>
                     </div>
 
                     <!-- The gender of the user -->
@@ -164,7 +168,7 @@
                         <label>Gender</label>
                         <div class="custom_select" name='gender'>
                             <select>
-                            <!-- Drop dowm box with four options including "Select" -->
+                            <!-- Drop down box with four options including "Select" -->
                             <option value="">Select</option>
                             <option value="male">Male</option>
                             <option value="female">Female</option>
@@ -175,14 +179,16 @@
 
                     <!-- **REQUIRED** The Email of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label>Email</label>
-                        <input type="email" id="email" class="input" placeholder='Email here...' required>
+                        <label>Email:</label>
+                        <!-- Text box for email -->
+                        <input type="email" id="email" class="input" placeholder='Email here' required>
                     </div>
 
                     <!-- **REQUIRED** The date of birth of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label>Date of birth:</label>
-                        <input type='date' class="input" name='dob' required>
+                        <label for="birthday">Date of birth:</label>
+                        <!-- Date picker for birthday -->
+                        <input type="date" id="birthday" class="input" name="dob" placeholder="yyyy-mm-dd" required>
                     </div>
 
                     <!-- The terms and conditions checkbox -->
