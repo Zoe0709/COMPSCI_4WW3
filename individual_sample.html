@@ -9,7 +9,7 @@
 
     <meta charset="UTF-8">
     <!-- The viewport meta tag for the responsiveness and scale -->
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="Description" content="A website to search museum" />
     <meta name="author" content="Abdullah and Zoe" />
     <meta name="keywords" content="Museum, search, rate, review" />
@@ -19,15 +19,15 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
     <!-- Referencing the css file -->
-    <link rel='stylesheet' type='text/css' href='./styles/individual_sample.css'>
+    <link rel="stylesheet" type="text/css" href="./styles/individual_sample.css">
 
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- icon for homescreens -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./logo-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./logo-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./logo-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/logo-180x180.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/logo-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-16x16.png">
 
 
     <!-- Twitter Cards Metadata-->
@@ -159,11 +159,11 @@
             <h1 class='heading'>Museum Infomation</h1>
 
             <!-- The screenshot of Aga Khan Museum on a map -->
-            <a href='./screenshots/aga_khan_map.jpeg'><img src='./screenshots/aga_khan_map.jpeg' alt="Aga Khan Museum"></a>
+            <a href='./img/aga_khan_map.jpeg'><img src='./img/aga_khan_map.jpeg' alt="Aga Khan Museum"></a>
 
             <!-- The sample video of Aga Khan Museum -->
             <p><video style="float:right;width:50%;margin-top:5em;" controls>
-                  <source src="./img_and_video/AgaKhanM.mp4" type="video/mp4">
+                  <source src="./img/AgaKhanM.mp4" type="video/mp4">
                 </video>
 
                 <!-- Detailed information of museum -->
@@ -236,14 +236,14 @@
             <p class='subheading-p'>Image displaying below differs when screen size changes.</p>
             <!-- picture and source tag part -->
             <picture>
-                <!-- On screen with size greater than 800px, image aga_khan.jpeg shows up -->
-                <source type="image/webp" media="(min-width: 800px)" srcset="./screenshots/aga_khan.webp">
-                <source media="(min-width: 800px)" srcset="./screenshots/aga_khan.jpeg">
-                <!-- On screen with size greater than 450px, image aga_khan2.jpeg shows up -->
-                <source type="image/webp" media="(min-width: 450px)" srcset="./screenshots/aga_khan2.webp">
-                <source media="(min-width: 450px)" srcset="./screenshots/aga_khan2.jpeg">
-                <!-- On screen with size smaller than 450px, image aga_khan3.jpeg shows up -->
-                <img src="./screenshots/aga_khan3.jpeg" alt="Aga Khan Museum Outlook" style="width:auto;">
+                <!-- When screen width >= 800px, image aga_khan shows up -->
+                <source type="image/webp" media="(min-width: 800px)" srcset="./img/aga_khan.webp">
+                <source media="(min-width: 800px)" srcset="./img/aga_khan.jpeg">
+                <!-- When screen width >= 450px, image aga_khan2 shows up -->
+                <source type="image/webp" media="(min-width: 450px)" srcset="./img/aga_khan2.webp">
+                <source media="(min-width: 450px)" srcset="./img/aga_khan2.jpeg">
+                <!-- When screen width < 450px, image aga_khan3 shows up -->
+                <img src="./img/aga_khan3.jpeg" alt="Aga Khan Museum Outlook" style="width:auto;">
             </picture>
         </div>
     </main>
@@ -253,6 +253,8 @@
 <footer>
     <!-- Include a google icon in front of authors -->
     <p><i class='material-icons sm-18'>account_circle</i>Authors: Zoe and Abdullah</p>
+    <!-- Group name -->
+    <p>___<strong>A&Z</strong>___</p>
 </footer>
 
 <!-- End of individial sample page -->

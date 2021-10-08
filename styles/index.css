@@ -171,6 +171,16 @@ nav a:hover {
 }
 
 
+/* Styling the image*/
+
+img {
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -185,7 +195,7 @@ nav a:hover {
 
 footer {
     text-align: center;
-    padding: 1em;
+    padding: 1px;
     background-color: #B68973;
     bottom: 0;
     color: white;
