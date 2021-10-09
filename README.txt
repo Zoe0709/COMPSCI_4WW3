@@ -10,7 +10,9 @@ Group Members:
 1). Zoe Ning, ningh4, 400183343
 2). Abdullah AbdulMaksoud, abdulmaa, 400205373
 
-Links: https://zoe0709.github.io
+Links: 
+https://zoe0709.github.io
+http://3.141.171.21/projMuseum/
 
 Note: Group members Zoe and Abdullah are 4WW3 students. Add-on tasks 1 and 2 are both implemented.
 
