@@ -72,8 +72,29 @@ Rows in the result table contain links to individual sample page.
 
 
 
+Resources Used:
+
+1). HTML5
+2). Vanilla CSS
+3). Google Fonts Material Icons
+4). Google Lighthouse
+5). VS Code (IDE)
+6). Sublime Text
+7). GitHub
+8). Amazon Web Services 
+9). Microsoft Teams
+10). Slack
+11). Windows 10, Mac OS
 
 
+
+References:
+
+1). Aga Khan museum. (n.d.). Retrieved from https://www.agakhanmuseum.org/index.html 
+2). Ontario Yours To Discover. (n.d.). Aga Khan Museum. Destination Ontario. Retrieved from https://www.destinationontario.com/en-ca/aga-khan-museum
+3). Ontario Yours To Discover. (n.d.). Bata Shoe Museum. Destination Ontario. Retrieved from https://www.destinationontario.com/en-ca/bata-shoe-museum
+4). Ontario Yours To Discover. (n.d.). Canadian Automotive Museum. Destination Ontario. Retrieved from https://www.destinationontario.com/en-ca/canadian-automotive-museum
+5). A Museum Like No Other. (2017b, July 27). [Video]. YouTube. https://www.youtube.com/watch?v=PDQ3QsjLfEM
 
 
 
