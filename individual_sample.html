@@ -231,6 +231,67 @@
                 </tr>
             </table>
         </div>
+
+        <div class='content'>
+
+            <!-- The header of the page -->
+            <h1 class='heading'>Leave a review</h1>
+
+            <!-- The form that will take the registration information about the user -->
+            <form class="wrapper">
+
+                <div class="form">
+
+                    <!-- The tittle for the form -->
+                    <div class="title">
+                        Review and Rating
+                    </div>
+
+
+                    <div class="inputfield">
+                        <label>Rating:</label>
+
+                        <!-- Drop down box for museum rating -->
+                        <div class="custom_select" name='rating'>
+
+                            <!-- Five options to select -->
+                            <select>
+                                <option value="5">5 stars</option>
+                                <option value="4">4 stars</option>
+                                <option value="3">3 stars</option>
+                                <option value="2">2 stars</option>
+                                <option value="1">1 star</option>
+                            </select>
+                        </div>
+
+
+                    </div>
+
+                    <!-- A brief description the museum -->
+                    <div class="inputfield">
+                        <label>Museum Review:</label>
+
+                        <!--
+                                                we are going to use textarea instead as it makes the description box look better 
+                                                <input type="text" class="input" placeholder='Museum description here'> 
+                                            -->
+                        <textarea class="textarea" placeholder='Description (max 500 charcters)' maxlength="200"></textarea>
+                    </div>
+
+                    <!-- 
+                        
+                            The submit button
+                    
+                        -->
+                    <div class="inputfield">
+                        <input type="submit" value="Submit" class="btn">
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
         <div>
             <p class='subheading-t'>Add-on Task 2.2: Use the HTML5 picture and source tags to provide images customized to the screen size.</p>
             <p class='subheading-p'>Image displaying below differs when screen size changes.</p>
@@ -258,4 +319,5 @@
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>
