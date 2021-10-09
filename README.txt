@@ -51,17 +51,20 @@ To mitigate the negative, you can apply helper like auto image generators, or co
 
 Above and Beyond:
 
-1). Built using vanilla css and html (No frameworks were used). 
+1). Built using vanilla css and html. There were no external frameworks used (such as bootstrap) to aid in the development process. Furthermore, there is no JavaScript in the implementation.
 
-2). Animation: We made use of css animations for form elements. When the form element is activated, the border smoothly increases by a factor of 3.
+2). Animation: We made use of css animations for form elements. When the form element is activated, the border smoothly increases by a factor of 3. This feature is added for all input forms with one of the following types: text, password, email, or date. Also it is added to the select and text area elements.
 
 3). Processing form elements real time using css; for example, a user will not be able to sign up without filling the required fields (such as username or password). Furthermore, the email field will not accept an input that doesn’t contain the ‘@’ character and will notify the user.
 
-4). One can search for museums either by name or by rating.
+4). One can search for museums either by name or by rating. Only one is required, but our implementation allows for both.
 
-5). Extensive comments added throughout the project files.
+5). Extensive comments added throughout the project files. Each css and html file contains a big amount of comments to demonstrate our understanding of the code.
 
-6). Design is consistent, responsive, and fits the topic of history. 
+6). Design is consistent, responsive, and fits the topic of history. Multiple @media queries have been used in all css files to ensure the design functions as expected on smaller sized screens. The color pallet is chosen to fit the topic of history.
+
+7) A sign-in page has been added. The page allows the user to input their username and password to log into their account.
+
 
 
 
