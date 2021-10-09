@@ -502,6 +502,10 @@ nav a#dropdown {
         margin-left: auto;
         margin-right: auto;
     }
+    .wrapper .form .inputfield .textarea {
+        margin-left: unset;
+        width: 92%;
+    }
 }
 
 
