@@ -224,6 +224,8 @@ footer {
     menue for smaller sizes */
     nav {
         display: none;
+        position: fixed;
+        z-index: 10000;
     }
     /* display the class called phone-menue */
     .phone-menue {
