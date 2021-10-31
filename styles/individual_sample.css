@@ -22,6 +22,14 @@ body {
 }
 
 
+/* Styling the map */
+
+#map {
+    height: 450px;
+    width: 100%;
+}
+
+
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -42,11 +50,32 @@ table {
 
 td,
 th {
-    border: 3px solid #dddddd;
+    border-top: 2px solid #dddddd;
+    border-left: 2px solid #dddddd;
+    border-right: 2px solid #dddddd;
     text-align: left;
     font-size: 22px;
     color: #fff;
     padding: 10px;
+}
+
+/* Remove vertical table borders */
+td,
+th {
+    border-left: none !important;
+    border-right: none !important;
+}
+
+/* Remove top border of the first row */
+th {
+    border-top: none !important;
+}
+
+/* Set the width of table cells in the last column */
+
+td:last-child,
+th:last-child {
+    width: 150px;
 }
 
 
@@ -67,7 +96,6 @@ td a {
 
 tr:hover {
     background: #16697A;
-    cursor: pointer;
 }
 
 table.center {
@@ -100,20 +128,13 @@ table.center {
  */
 
 img {
-    padding: 5px;
+    padding: 2px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
 }
 
-
-/* Styling the image when cursor hovering over it */
-
-img:hover {
-    box-shadow: 0 0 8px #16697A;
-    cursor: pointer
-}
 
 
 /* 

@@ -29,6 +29,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/logo-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-16x16.png">
+
+    <!-- Import JavaScript file -->
+    <script src="./js/results_sample.js"></script>
 </head>
 
 <body>
@@ -135,49 +138,51 @@
 
             <!-- Header that indicates content of this page -->
             <h1 class='heading'>Search Results</h1>
-            <div class='result-container'>
 
-                <!-- The screenshot of three result museums on a map -->
-                <a href='./img/search_sample.jpeg' width="983px" height="553px"><img src='./img/search_sample.jpeg' alt="Search Results"></a>
+            <!-- Embed a map using Google Map API -->
+            <div id="map"></div>
+            <!-- Load the Maps JavaScript API -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARy_62bIYsiS3Ossb4DN8C-Dso2qq0RM0&callback=initMap"></script>
+            
+            <div class='result-container'>
 
                 <!-- Show the results in a tabular format -->
                 <table class='result-table center'>
 
                     <!-- Table has four columns -->
                     <tr>
+                        <th>Outlook</th>
                         <th>Museum</th>
                         <th>Rating</th>
                         <th>Address</th>
-                        <th>Postal Code</th>
                     </tr>
 
                     <!-- The first row of the table (except the header row) -->
                     <tr>
-                        <!-- Grid for museum name of the first row including a link to the individual page of the corresponding museum -->
+                        <!-- Grid for museum outlook of the first row including a link to the individual sample page -->
+                        <td><a href='./individual_sample.html'><img src="./img/aga_khan.jpeg"></a></td>
+                        <!-- Grid for museum name of the first row -->
                         <td><a href='./individual_sample.html'>Aga Khan Museum</a></td>
                         <!-- Grid for rating of the first row -->
-                        <td><a href='./individual_sample.html'>4.6 Stars</a></td>
+                        <td><a href='./individual_sample.html'>4.6<i class="material-icons" style="font-size:22px;">star</i></a></td>
                         <!-- Grid for address of the first row -->
-                        <td><a href='./individual_sample.html'>77 Wynford Drive, Toronto, Ontario</a></td>
-                        <!-- Grid for postal code of the first row -->
-                        <td><a href='./individual_sample.html'>M3C 1K1</a></td>
-
+                        <td><a href='./individual_sample.html'>77 Wynford Drive, Toronto, Ontario<p>M3C 1K1</p></a></td>
                     </tr>
 
                     <!-- The second row of the table -->
                     <tr>
+                        <td><a href='./individual_sample.html'><img src="./img/bata.jpeg"></a></td>
                         <td><a href='./individual_sample.html'>Bata Shoe Museum</a></td>
-                        <td><a href='./individual_sample.html'>4.3 Stars</a></td>
-                        <td><a href='./individual_sample.html'>327 Bloor St W, Toronto, Ontario</a></td>
-                        <td><a href='./individual_sample.html'>M5S 1W7</a></td>
+                        <td><a href='./individual_sample.html'>4.3<i class="material-icons" style="font-size:22px;">star</i></a></td>
+                        <td><a href='./individual_sample.html'>327 Bloor St W, Toronto, Ontario<p>M5S 1W7</p></a></td>
                     </tr>
 
                     <!-- The third row of the table -->
                     <tr>
+                        <td><a href='./individual_sample.html'><img src="./img/canoe.jpeg"></a></td>
                         <td><a href='./individual_sample.html'>Canadian Canoe Museum</a></td>
-                        <td><a href='./individual_sample.html'>4.1 Stars</a></td>
-                        <td><a href='./individual_sample.html'>910 Monaghan Rd, Peterborough, Ontario</a></td>
-                        <td><a href='./individual_sample.html'>K9J 5K4</a></td>
+                        <td><a href='./individual_sample.html'>4.1<i class="material-icons" style="font-size:22px;">star</i></a></td>
+                        <td><a href='./individual_sample.html'>910 Monaghan Rd, Peterborough, Ontario<p>K9J 5K4</p></a></td>
                     </tr>
                 </table>
                 <!-- end of result table -->

@@ -52,6 +52,9 @@
     <meta property="og:image:alt" content="Picture of the museum" />
     <meta property="og:description" content="A museum in Canada" />
 
+
+    <!-- Import JavaScript file -->
+    <script src="./js/individual_sample.js"></script>
 </head>
 
 <body>
@@ -158,12 +161,14 @@
             <!-- Header that indicates content of this page -->
             <h1 class='heading'>Museum Infomation</h1>
 
-            <!-- The screenshot of Aga Khan Museum on a map -->
-            <a href='./img/aga_khan_map.jpeg'><img src='./img/aga_khan_map.jpeg' alt="Aga Khan Museum"></a>
+            <!-- Embed a map using Google Map API -->
+            <div id="map"></div>
+            <!-- Load the Maps JavaScript API -->
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARy_62bIYsiS3Ossb4DN8C-Dso2qq0RM0&callback=initMap"></script>
 
             <!-- The sample video of Aga Khan Museum -->
             <p><video style="float:right;width:50%;margin-top:5em;" controls>
-                  <source src="./img/AgaKhanM.mp4" type="video/mp4">
+                    <source src="./img/AgaKhanM.mp4" type="video/mp4">
                 </video>
 
                 <!-- Detailed information of museum -->
@@ -180,8 +185,8 @@
                     <p class='subheading-p'>+1 (416)-646-4677</p>
                     <!-- Open hours of museum -->
                     <p itemprop="openingHoursSpecification" class='subheading-t'>Open Hours: </p>
-                    <p itemprop="openingHoursSpecification" class='subheading-p'>Thu, Fri, Sat, Sun: 10:00am - 5:30pm</p>
-                    <p itemprop="openingHoursSpecification" class='subheading-p'>Mondays, Tuesdays, and Wednesdays: Closed</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Thu, Fri, Sat, and Sun: 10:00am - 5:30pm</p>
+                    <p itemprop="openingHoursSpecification" class='subheading-p'>Mon, Tue, and Wed: Closed</p>
                     <!-- Brief description of museum -->
                     <p itemprop="description" class='subheading-t'>Description: </p>
                     <p itemprop="description" class='subheading-p'>Aga Khan Museum is a stunning Toronto museum dedicated to celebrating the Islamic Arts. It presents and collects art from historically significant Muslim civilizations as well as contemporary Muslim communities and diasporas around
@@ -194,40 +199,40 @@
             <table class='result-table center'>
                 <tr>
                     <!-- Table has three columns -->
-                    <th>Username</th>
-                    <th>Rating</th>
+                    <th>Avatar</th>
                     <th>Review</th>
+                    <th>Rating</th>
                 </tr>
 
                 <!-- The first row of the table (except the header row) -->
                 <tr itemscope itemtype="https://schema.org/Review">
-                    <!-- Grid for username of the first row -->
-                    <td itemprop="author">Alecia Danniel</td>
-                    <!-- Grid for rating of the first row -->
-                    <td itemprop="reviewRating">5 stars</td>
-                    <!-- Grid for review of the first row -->
-                    <td itemprop="reviewBody">Highly recommend visiting this museum! I learned so much about Islamic culture.</td>
+                    <!-- User profile picture -->
+                    <td itemprop="image"><img src="./img/avatar1.png" style="border-radius: 50%;"></td>
+                    <!-- Username and review -->
+                    <td itemprop="reviewBody"><b style="font-size: 26px;">Alecia Danniel</b><p>Highly recommend visiting this museum! I learned so much about Islamic culture.</p></td>
+                    <!-- Rating -->
+                    <td itemprop="reviewRating"><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></td>
                 </tr>
 
                 <!-- The second row of the table -->
                 <tr itemscope itemtype="https://schema.org/Review">
-                    <td itemprop="author">Suzan Evanson</td>
-                    <td itemprop="reviewRating">4 stars</td>
-                    <td itemprop="reviewBody">The museum is designed well and they have a large collection of books and manuscripts.</td>
+                    <td itemprop="image"><img src="./img/avatar2.png" style="border-radius: 50%;"></td>
+                    <td itemprop="reviewBody"><b style="font-size: 26px;">Suzan Evanson</b><p>The museum is designed well and they have a large collection of books and manuscripts.</p></td>
+                    <td itemprop="reviewRating"><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></td>
                 </tr>
 
                 <!-- The third row of the table -->
                 <tr itemscope itemtype="https://schema.org/Review">
-                    <td itemprop="author">Miranda Walt Dalton</td>
-                    <td itemprop="reviewRating">4 stars</td>
-                    <td itemprop="reviewBody">A great place to experience the history of art and culture of medieval Islamic world.</td>
+                    <td itemprop="image"><img src="./img/avatar4.png" style="border-radius: 50%;"></td>
+                    <td itemprop="reviewBody"><b style="font-size: 26px;">Miranda Walt Dalton</b><p>A great place to experience the history of art and culture of medieval Islamic world.</p></td>
+                    <td itemprop="reviewRating"><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></td>
                 </tr>
 
                 <!-- The fourth row of the table -->
                 <tr itemscope itemtype="https://schema.org/Review">
-                    <td itemprop="author">Sebastian Cobb</td>
-                    <td itemprop="reviewRating">3 stars</td>
-                    <td itemprop="reviewBody">Too expensive for such a limited collection. Not worth the time and money.</td>
+                    <td itemprop="image"><img src="./img/avatar3.png" style="border-radius: 50%;"></td>
+                    <td itemprop="reviewBody"><b style="font-size: 26px;">Sebastian Cobb</b><p>Too expensive for such a limited collection. Not worth the time and money.</p></td>
+                    <td itemprop="reviewRating"><span><i class="material-icons">star</i><i class="material-icons">star</i><i class="material-icons">star</i></span></td>
                 </tr>
             </table>
         </div>
