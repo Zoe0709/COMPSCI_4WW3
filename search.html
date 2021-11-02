@@ -22,6 +22,9 @@
     <!-- Referencing the css file -->
     <link rel="stylesheet" type="text/css" href="./styles/search.css">
 
+    <!-- Referencing the js file -->
+    <script src='./js/search.js'></script>
+
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -138,6 +141,40 @@
 
                 <!-- Caption of the fieldset grouping -->
                 <legend class='legend'>YOU CAN ...</legend>
+
+
+
+                <!-- The form that will search and filter museums by name -->
+                <div class="wrapper">
+
+                    <!-- The tittle for the form -->
+                    <div class="title">
+                        SEARCH BY LOCATION
+                    </div>
+                    <div class="form">
+
+                        <div class="inputfield">
+                            <!-- The search button, click to jump to results sample page -->
+                            <a class="btn" style="padding: 0;width: 40%;margin-left: 30%;" onclick="getLocation()">
+                                <input type="submit" value="My Location" class="btn" onclick="getLocation()">
+                            </a>
+                        </div>
+                        <div class="inputfield">
+                            <input id='longitude' style="width: 60%;margin-left:7%;" type="number" step='0.001' name='longitude' placeholder='long (-90 ~ 90)' min='-90' max='90' class="input">
+                            <input id='latitude' style="width: 60%;margin-left: 7%;" type="number" step='0.001' name='latitude' placeholder='lat (-180 ~ 180)' min='-180' max='180' class="input">
+
+                        </div>
+                        <div class="inputfield">
+                            <!-- The search button, click to jump to results sample page -->
+                            <a href="./results_sample.html" class="btn" style="padding: 0;width: 40%;margin-left: 30%;" onclick="getLocation()">
+                                <input type="submit" value="Search" class="btn" onclick="getLocation()">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+
 
                 <!-- The form that will search and filter museums by name -->
                 <div class="wrapper">

@@ -21,6 +21,9 @@
     <!-- Referencing the css file -->
     <link rel="stylesheet" type="text/css" href="./styles/registration,sign_in.css">
 
+    <!-- Referencing the js file -->
+    <script src='./js/registration.js'></script>
+
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -137,7 +140,7 @@
             <h1 class='heading'>Sign Up</h1>
 
             <!-- The form that will take the registration information about the user -->
-            <form class="wrapper">
+            <form class="wrapper" onsubmit="return validatereg(this)">
 
                 <div class="form">
 
@@ -150,52 +153,55 @@
                     <div class="inputfield">
                         <label>First Name:</label>
                         <!-- Text box for first name -->
-                        <input type="text" class="input" placeholder='First name here'>
+                        <input type="text" class="input" pattern="^[a-zA-Z\s]*$" name="firstname" placeholder='First name here'>
                     </div>
 
                     <!-- The last name of the user -->
                     <div class="inputfield">
                         <label>Last Name:</label>
                         <!-- Text box for last name -->
-                        <input type="text" class="input" placeholder='Last name here'>
+                        <input type="text" class="input" pattern="^[a-zA-Z\s]*$" name="lastname" placeholder='Last name here'>
                     </div>
 
                     <!-- **REQUIRED** The username of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label for="uname">Username:</label>
+                        <label for="uname">Username *:</label>
                         <!-- Text box for username -->
-                        <input type="text" id="uname" class="input" placeholder='Username here' required>
+                        <input type="text" id="uname" pattern="^[a-zA-Z\s0-9]*$" name="username" class="input" placeholder='Username here' required>
                     </div>
 
                     <!-- **REQUIRED** The password of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label for="pass">Password:</label>
+                        <label for="pass">Password *:</label>
                         <!-- Text box for password -->
-                        <input type="password" id="pass" class="input" placeholder='Password here' required>
+                        <input type="password" id="pass" name="password" class="input" placeholder='Password here' required>
                     </div>
 
                     <!-- **REQUIRED** The Email of the user **REQUIRED** -->
                     <div class="inputfield">
-                        <label for="email">Email:</label>
+                        <label for="email">Email *:</label>
                         <!-- Text box for email -->
-                        <input type="email" id="email" class="input" placeholder='Email here' required>
+                        <input type="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" name="email" class="input" placeholder='Email here' required>
                     </div>
 
 
-                    <!-- **REQUIRED** The date of birth of the user **REQUIRED** -->
+                    <!-- **REQUIRED** The date of birth of the user **REQUIRED**
                     <div class="inputfield">
                         <label for="birthday">Date of birth:</label>
-                        <!-- Date picker for birthday -->
                         <input type="date" id="birthday" class="input" name="dob" placeholder="yyyy-mm-dd" required>
-                    </div>
+                    </div> -->
 
                     <!-- The terms and conditions checkbox -->
                     <div class="inputfield terms">
                         <label class="check">
-                            <input type="checkbox" id="checkbox">
+                            <input type="checkbox" id="checkbox" name="terms">
                             <span class="checkmark"></span>
                         </label>
-                        <label style="width: 70%;" for="checkbox">Agreed to terms and conditions</label>
+                        <label style="width: 70%;" for="checkbox">Agreed to terms and conditions *</label>
+                    </div>
+
+                    <div class="inputfield">
+                        <label>* are the required items</label>
                     </div>
 
                     <!-- The submit button -->
@@ -218,4 +224,5 @@
 </footer>
 
 <!-- End of registration page -->
+
 </html>

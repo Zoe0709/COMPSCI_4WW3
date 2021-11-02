@@ -21,6 +21,9 @@
     <!-- Referencing the css file -->
     <link rel="stylesheet" type="text/css" href="./styles/submission.css">
 
+    <!-- Referencing the js file -->
+    <script src='./js/submit.js'></script>
+
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
@@ -138,7 +141,7 @@
 
             <!-- The form that will take the information about the Museum
             (A temporary URI to submit the form information ) -->
-            <form class="wrapper" action='./index.html'>
+            <form class="wrapper" onsubmit="return validate(this)">
 
                 <!-- The form is divided into 2 parts -->
                 <div class="form">
@@ -156,20 +159,26 @@
 
                     <!-- **REQUIRED** The name of the museum **REQUIRED** -->
                     <div class="inputfield">
-                        <label>Museum Name:</label>
-                        <input type="text" class="input" placeholder='Museum name here' required>
+                        <label>Museum Name *:</label>
+                        <input type="text" pattern="^[a-zA-Z\s0-9]*$" class="input" name="musName" placeholder='Museum name here' required>
                     </div>
 
-                    <!-- The address of the museum -->
+                    <!-- The country of the museum -->
                     <div class="inputfield">
-                        <label>Museum Address:</label>
-                        <input type="text" class="input" placeholder='Museum address here'>
+                        <label>Museum Country *:</label>
+                        <input type="text" pattern="^[a-zA-Z\s]*$" class="input" name="musCountry" placeholder='Museum country here' required>
+                    </div>
+
+                    <!-- The city of the museum -->
+                    <div class="inputfield">
+                        <label>Museum City *:</label>
+                        <input type="text" pattern="^[a-zA-Z\s]*$" class="input" name="musCity" placeholder='Museum city here' required>
                     </div>
 
                     <!-- The open hours of the museum -->
                     <div class="inputfield">
-                        <label>Museum Open Hours:</label>
-                        <input type="text" class="input" placeholder='Open hours here'>
+                        <label>Museum Postal Code:</label>
+                        <input type="text" pattern="^[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d$" class="input" name="musPostal" placeholder='Postal code here'>
                     </div>
 
 
@@ -181,7 +190,7 @@
                             we are going to use textarea instead as it makes the description box look better 
                             <input type="text" class="input" placeholder='Museum description here'> 
                         -->
-                        <textarea class="textarea" placeholder='Description (max 500 charcters)' maxlength="200"></textarea>
+                        <textarea class="textarea" name="musDesc" placeholder='Description (max 200 charcters)' maxlength="200"></textarea>
                     </div>
 
 
@@ -190,7 +199,7 @@
                         <label>Museum Image</label>
                         <!-- Choosing an image for the museum -->
                         <label class="custom-file-upload">
-                                <input type="file" accept="image/*" class="custom-file-upload">
+                                <input type="file" name="musImage" accept="image/*" class="custom-file-upload">
                                 Choose Image
                         </label>
                     </div>
@@ -200,7 +209,7 @@
                         <label>Museum Video</label>
                         <!-- Choosing a video for the museum -->
                         <label class="custom-file-upload">
-                                <input type="file" accept="video/*" class="custom-file-upload">
+                                <input type="file" name="musVid" accept="video/*" class="custom-file-upload">
                                 Choose Video
                         </label>
                     </div>
@@ -211,9 +220,16 @@
                     
                         -->
 
+
+
                     <!-- The tittle for the second part in the form -->
                     <div class="title" style="margin-top: 40px;">
                         Museum Location
+                    </div>
+
+                    <!-- The get my location button -->
+                    <div class="inputfield">
+                        <input onclick='getLocation()' type="button" value="My Location" style="height: 92%; margin-top: 2%;margin-left: 25%;width: 50%;" class="btn">
                     </div>
 
                     <!-- The longitude of the musuem -->
@@ -227,6 +243,7 @@
                         <label>Latitude:</label>
                         <input id='latitude' type="number" step='0.001' name='latitude' placeholder='lat (-180 ~ 180)' min='-180' max='180' class="input">
                     </div>
+
 
                     <!-- 
                         
@@ -252,4 +269,5 @@
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>
