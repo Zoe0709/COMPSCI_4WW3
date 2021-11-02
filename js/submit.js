@@ -17,8 +17,8 @@ function showPosition(position) {
 
     // Change values in long/lat boxes to the position
     // retrieved in getLocation()
-    long.value = position.coords.longitude;
-    lat.value = position.coords.latitude;
+    long.value = Math.round(position.coords.longitude * 1000) / 1000;
+    lat.value = Math.round(position.coords.latitude * 1000) / 1000;
 }
 // fall back js validation
 function validate(form) {
