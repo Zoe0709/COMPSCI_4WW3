@@ -19,6 +19,7 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
     <!-- Referencing the css file -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/registration,sign_in.css">
 
     <!-- Referencing the js file -->
@@ -140,45 +141,45 @@
             <h1 class='heading'>Sign Up</h1>
 
             <!-- The form that will take the registration information about the user -->
-            <form class="wrapper" onsubmit="return validatereg(this)">
+            <form class="wrapper animate__animated animate__fadeIn" onsubmit="return validatereg(this)">
 
                 <div class="form">
 
                     <!-- The tittle for the form -->
-                    <div class="title">
+                    <div class="title animate__animated animate__fadeIn animate__delay-1s">
                         Registration
                     </div>
 
                     <!-- The first name of the user -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-2s">
                         <label>First Name:</label>
                         <!-- Text box for first name -->
                         <input type="text" class="input" pattern="^[a-zA-Z\s]*$" name="firstname" placeholder='First name here'>
                     </div>
 
                     <!-- The last name of the user -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-2s">
                         <label>Last Name:</label>
                         <!-- Text box for last name -->
                         <input type="text" class="input" pattern="^[a-zA-Z\s]*$" name="lastname" placeholder='Last name here'>
                     </div>
 
                     <!-- **REQUIRED** The username of the user **REQUIRED** -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-3s">
                         <label for="uname">Username *:</label>
                         <!-- Text box for username -->
                         <input type="text" id="uname" pattern="^[a-zA-Z\s0-9]*$" name="username" class="input" placeholder='Username here' required>
                     </div>
 
                     <!-- **REQUIRED** The password of the user **REQUIRED** -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-3s">
                         <label for="pass">Password *:</label>
                         <!-- Text box for password -->
                         <input type="password" id="pass" name="password" class="input" placeholder='Password here' required>
                     </div>
 
                     <!-- **REQUIRED** The Email of the user **REQUIRED** -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-4s">
                         <label for="email">Email *:</label>
                         <!-- Text box for email -->
                         <input type="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,}$" name="email" class="input" placeholder='Email here' required>
@@ -192,7 +193,7 @@
                     </div> -->
 
                     <!-- The terms and conditions checkbox -->
-                    <div class="inputfield terms">
+                    <div class="inputfield terms animate__animated animate__fadeIn animate__delay-4s">
                         <label class="check">
                             <input type="checkbox" id="checkbox" name="terms">
                             <span class="checkmark"></span>
@@ -200,12 +201,12 @@
                         <label style="width: 70%;" for="checkbox">Agreed to terms and conditions *</label>
                     </div>
 
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-5s">
                         <label>* are the required items</label>
                     </div>
 
                     <!-- The submit button -->
-                    <div class="inputfield">
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-5s">
                         <input type="submit" value="Register" class="btn">
                     </div>
                 </div>
