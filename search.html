@@ -20,6 +20,8 @@
     <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
     <!-- Referencing the css file -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/search.css">
 
     <!-- Referencing the js file -->
@@ -137,7 +139,7 @@
 
             <!-- Header that indicates content of this page -->
             <h1 class='heading'>Search for Museums</h1>
-            <fieldset class='formentry'>
+            <fieldset class='formentry animate__animated animate__fadeIn'>
 
                 <!-- Caption of the fieldset grouping -->
                 <legend class='legend'>YOU CAN ...</legend>
@@ -145,7 +147,7 @@
 
 
                 <!-- The form that will search and filter museums by name -->
-                <div class="wrapper">
+                <div class="wrapper animate__animated animate__fadeIn animate__delay-1s">
 
                     <!-- The tittle for the form -->
                     <div class="title">
@@ -177,7 +179,7 @@
 
 
                 <!-- The form that will search and filter museums by name -->
-                <div class="wrapper">
+                <div class="wrapper animate__animated animate__fadeIn animate__delay-2s">
 
                     <!-- The tittle for the form -->
                     <div class="title">
@@ -189,7 +191,7 @@
                             <label>Name:</label>
 
                             <!-- Text box for museum name -->
-                            <input type="text" name="museumname" class="input" placeholder='Museum name here'>
+                            <input type="text" name="museumname" pattern="^[a-zA-Z\s0-9]*$" class="input" placeholder='Museum name here'>
 
                             <!-- The search button, click to jump to results sample page -->
                             <a href="./results_sample.html" class="btn" style="padding: 0;">
@@ -200,7 +202,7 @@
                 </div>
 
                 <!-- The form that will search and filter museums by rating -->
-                <div class="wrapper">
+                <div class="wrapper animate__animated animate__fadeIn animate__delay-3s">
 
                     <!-- The tittle for the form -->
                     <div class="title">
@@ -216,7 +218,7 @@
                             <div class="custom_select" name='rating'>
 
                                 <!-- Five options to select -->
-                                <select>
+                                <select id="selectrating">
                                     <option value="5">5 stars</option>
                                     <option value="4">4 stars</option>
                                     <option value="3">3 stars</option>

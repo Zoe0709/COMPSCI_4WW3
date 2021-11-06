@@ -351,12 +351,8 @@ The Wrapper for the Registration form
     border-radius: 3px;
 }
 
-
-/* when the rating box is selected */
-
-.wrapper .form .inputfield .input:focus,
-.wrapper .form .inputfield .custom_select select:focus {
-    border: 3px solid #A45D5D;
+input:invalid {
+    border: 4px solid #9b2f2f !important;
 }
 
 
@@ -428,4 +424,8 @@ footer {
     bottom: 0;
     color: white;
     margin-top: auto;
+}
+
+:root {
+    --animate-delay: 0.3s;
 }
