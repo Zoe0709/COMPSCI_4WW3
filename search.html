@@ -168,8 +168,8 @@
                         </div>
                         <div class="inputfield">
                             <!-- The search button, click to jump to results sample page -->
-                            <a href="./results_sample.html" class="btn" style="padding: 0;width: 40%;margin-left: 30%;" onclick="getLocation()">
-                                <input type="submit" value="Search" class="btn" onclick="getLocation()">
+                            <a class="btn" style="padding: 0;width: 40%;margin-left: 30%;">
+                                <input type="submit" value="Search" class="btn" onclick="submitPosition()">
                             </a>
                         </div>
                     </div>
@@ -191,11 +191,11 @@
                             <label>Name:</label>
 
                             <!-- Text box for museum name -->
-                            <input type="text" name="museumname" pattern="^[a-zA-Z\s0-9]*$" class="input" placeholder='Museum name here'>
+                            <input type="text" id="musName" pattern="^[a-zA-Z\s0-9]*$" class="input" placeholder='Museum name here'>
 
                             <!-- The search button, click to jump to results sample page -->
-                            <a href="./results_sample.html" class="btn" style="padding: 0;">
-                                <input type="submit" value="Search" class="btn">
+                            <a class="btn" style="padding: 0;">
+                                <input type="submit" value="Search" class="btn" onclick="submitName()">
                             </a>
                         </div>
                     </div>
