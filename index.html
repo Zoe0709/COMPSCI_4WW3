@@ -18,9 +18,9 @@
 
     <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
-
-    <!-- Referencing the css file -->
+    <!-- Referencing the css file and library -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -31,9 +31,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-16x16.png">
 
     <!-- Script for background image changing only -->
-    <script src='./js/index.js'></script>
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src='./js/index.js'></script>    
 </head>
 
 <!-- Background image changes repeatedly -->
@@ -52,67 +50,44 @@
 
                 <!-- the Home anchor element -->
                 <li>
-                    <a class='current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                    <a class='current pulse-grow-on-hover' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
                 <!-- the Search anchor element -->
                 <li>
-                    <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                    <a class='default-nav pulse-grow-on-hover' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
 
                 <!-- the Submit anchor element -->
                 <li>
-                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                    <a class='default-nav pulse-grow-on-hover' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
 
                 <!-- the Sign Up anchor element -->
                 <li>
-                    <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                    <a class='account default-nav pulse-grow-on-hover' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account default-nav' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a class='account default-nav pulse-grow-on-hover' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
             </ul>
         </nav>
 
         <!-- navigation bar for smaller sizes -->
-        <div style="background-color: #B68973;">
-
-            <ul class="phone-menue">
-
-                <!-- the Home anchor element -->
-                <li>
-                    <a id='phone-current' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
-                    <!-- break (New line) -->
-                    <br>
-                </li>
-
-
-                <!-- the Sign In anchor element -->
-                <li>
-                    <a class='phone-navr' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
-                </li>
-
-            </ul>
-
-            <!-- break (New line) -->
-            <br>
+        <div style="background-color: #B68973; position: relative; text-align: center;">
 
             <ul class="phone-menue">
 
                 <!-- the Search anchor element -->
                 <li>
                     <a class='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
-                    <!-- break (New line) -->
-                    <br>
                 </li>
 
-
-                <!-- the Sign Up anchor element -->
+                <!-- the Home anchor element -->
                 <li>
-                    <a class='phone-navr' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                    <a class='phone-navr' href='./index.html' style="color: #4A403A;"><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
             </ul>
@@ -127,6 +102,21 @@
                     <a class='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
 
+                <!-- the User anchor element -->
+                <li>
+                    <!-- A dropbox shows up by clicking -->
+                    <a class='phone-navr dropdown dropbtn' onclick="dropthebox()">
+                        <i class='material-icons sm-18'>account_circle</i>Account
+                        <div class="dropdown-content" id="userdropdown">
+                            <!-- Two options that jumps to sign in and sign up pages respectively -->
+                            <a href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                            <a href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                        </div>
+                    </a>
+                    <!-- break (New line) -->
+                    <br>
+                </li>
+
             </ul>
 
         </div>
@@ -139,10 +129,10 @@
         <div class='content'>
 
             <!-- The first header (name of our project) -->
-            <h1 id='main-header' class="animate__animated animate__fadeIn">MuseuMaster</h1>
+            <h1 id="main-header" class="animate__animated animate__fadeIn">MuseuMaster</h1>
 
             <!-- The secondary header (description of our project) -->
-            <h2 id='secondary-header' class="animate__animated animate__fadeIn">Discover Museums around the world. </h2>
+            <h2 id="secondary-header" class="animate__animated animate__fadeIn">Discover Museums around the world. </h2>
 
             <!-- Museum logo -->
             <picture style="display: block;margin-left: auto;margin-right: auto">

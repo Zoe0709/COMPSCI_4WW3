@@ -18,7 +18,7 @@
 
     <meta name="viewport" content="width = device-width, initial-scale = 1, minimum-scale = 1, maximum-scale = 5" />
 
-    <!-- Referencing the css file -->
+    <!-- Referencing the css file and library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="./styles/registration,sign_in.css">
 
@@ -29,6 +29,9 @@
     <link rel="apple-touch-icon" sizes="180x180" href="./img/logo-180x180.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/logo-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-16x16.png">
+
+    <!-- Referencing the js file -->
+    <script src='./js/sign_in.js'></script>
 </head>
 
 <body>
@@ -42,27 +45,27 @@
 
                 <!-- the Home anchor element -->
                 <li>
-                    <a class='default-nav' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                    <a class='default-nav pulse-grow-on-hover' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
                 <!-- the Search anchor element -->
                 <li>
-                    <a class='default-nav' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                    <a class='default-nav pulse-grow-on-hover' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
 
                 <!-- the Submit anchor element -->
                 <li>
-                    <a class='default-nav' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                    <a class='default-nav pulse-grow-on-hover' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
 
                 <!-- the Sign Up anchor element -->
                 <li>
-                    <a class='account default-nav' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                    <a class='account default-nav pulse-grow-on-hover' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                 </li>
 
                 <!-- the Sign In anchor element -->
                 <li>
-                    <a class='account current' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                    <a class='account current pulse-grow-on-hover' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
                 </li>
 
             </ul>
@@ -71,41 +74,18 @@
         </nav>
 
         <!-- navigation for smaller sizes -->
-        <div style="background-color: #B68973;">
-
-            <ul class="phone-menue">
-
-                <!-- the Home anchor element -->
-                <li>
-                    <a class='phone-navl' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
-                    <!-- break (New line) -->
-                    <br>
-                </li>
-
-
-                <!-- the Sign In anchor element -->
-                <li>
-                    <a class='phone-current phone-navr' href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
-                </li>
-
-            </ul>
-
-            <!-- break (New line) -->
-            <br>
+        <div style="background-color: #B68973; position: relative; text-align: center;">
 
             <ul class="phone-menue">
 
                 <!-- the Search anchor element -->
                 <li>
                     <a class='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
-                    <!-- break (New line) -->
-                    <br>
                 </li>
 
-
-                <!-- the Sign Up anchor element -->
+                <!-- the Home anchor element -->
                 <li>
-                    <a class='phone-navr' href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                    <a class='phone-navr' href='./index.html' ><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
             </ul>
@@ -118,6 +98,21 @@
                 <!-- the Submit anchor element -->
                 <li>
                     <a class='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                </li>
+
+                <!-- the User anchor element -->
+                <li>
+                    <!-- A dropbox shows up by clicking -->
+                    <a class='phone-navr dropdown dropbtn' onclick="dropthebox()" style="color: #4A403A;">
+                        <i class='material-icons sm-18'>account_circle</i>Account
+                        <div class="dropdown-content" id="userdropdown">
+                            <!-- Two options that jumps to sign in and sign up pages respectively -->
+                            <a href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                            <a href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                        </div>
+                    </a>
+                    <!-- break (New line) -->
+                    <br>
                 </li>
 
             </ul>
@@ -175,8 +170,10 @@
 <footer>
     <!-- Include a google icon in front of authors -->
     <p><i class='material-icons sm-18'>account_circle</i>Authors: Zoe and Abdullah</p>
-    <!-- Group name -->
-    <p>___<strong>A&Z</strong>___</p>
+    <div class="scrolling">
+        <!-- Group name -->
+        <p>___<strong>A&Z</strong>___</p>
+    </div>
 </footer>
 
 <!-- End of individial sample page -->
