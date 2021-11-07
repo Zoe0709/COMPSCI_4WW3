@@ -79,7 +79,7 @@ function submitName() {
     var musName = document.getElementById('musName');
 
     if (!(validateName(musName.value))) {
-        window.alert("Incorrect name, can only contain letters, white space, or numbers. And can't be empty.");
+        window.alert("Please insert a correct name. A museum name can only contain letters, white space, or numbers.");
         musName.style.backgroundColor = bgcolor;
         return false;
     } else {
