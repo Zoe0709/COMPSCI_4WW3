@@ -32,7 +32,8 @@
 
     <!-- Script for background image changing only -->
     <script src='./js/index.js'></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <!-- Background image changes repeatedly -->
@@ -138,10 +139,10 @@
         <div class='content'>
 
             <!-- The first header (name of our project) -->
-            <h1 id='main-header'>MuseuMaster</h1>
+            <h1 id='main-header' class="animate__animated animate__fadeIn">MuseuMaster</h1>
 
             <!-- The secondary header (description of our project) -->
-            <h2 id='secondary-header'>Discover Museums around the world. </h2>
+            <h2 id='secondary-header' class="animate__animated animate__fadeIn">Discover Museums around the world. </h2>
 
             <!-- Museum logo -->
             <picture style="display: block;margin-left: auto;margin-right: auto">
@@ -161,8 +162,10 @@
 <footer>
     <!-- Include a google icon in front of authors -->
     <p><i class='material-icons sm-18'>account_circle</i>Authors: Zoe and Abdullah</p>
-    <!-- Group name -->
-    <p>___<strong>A&Z</strong>___</p>
+    <div class="scrolling">
+        <!-- Group name -->
+        <p>___<strong>A&Z</strong>___</p>
+    </div>
 </footer>
 
 
