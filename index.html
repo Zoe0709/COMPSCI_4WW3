@@ -20,7 +20,7 @@
 
     <!-- Referencing the css file and library -->
     <link rel="stylesheet" type="text/css" href="./styles/index.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- google icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -31,12 +31,13 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./img/logo-16x16.png">
 
     <!-- Script for background image changing only -->
-    <script src='./js/index.js'></script>    
+    <script src='./js/index.js'></script>
 </head>
 
 <!-- Background image changes repeatedly -->
+
 <body class='backImg'>
-        <div class="overlay"></div>
+    <div class="overlay"></div>
 </body>
 
 <body>
@@ -82,12 +83,12 @@
 
                 <!-- the Search anchor element -->
                 <li>
-                    <a class='phone-navl' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
+                    <a class='phone-navl pulse-grow-on-hover' href='./search.html'><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
 
                 <!-- the Home anchor element -->
                 <li>
-                    <a class='phone-navr' href='./index.html' style="color: #4A403A;"><i class='material-icons sm-18'>home</i>Home</a>
+                    <a class='phone-navr pulse-grow-on-hover' href='./index.html' style="color: #4A403A;"><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
             </ul>
@@ -99,18 +100,18 @@
 
                 <!-- the Submit anchor element -->
                 <li>
-                    <a class='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                    <a class='phone-navl pulse-grow-on-hover' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
 
                 <!-- the User anchor element -->
                 <li>
                     <!-- A dropbox shows up by clicking -->
-                    <a class='phone-navr dropdown dropbtn' onclick="dropthebox()">
+                    <a class='phone-navr dropdown dropbtn pulse-grow-on-hover' onclick="dropthebox()">
                         <i class='material-icons sm-18'>account_circle</i>Account
                         <div class="dropdown-content" id="userdropdown">
                             <!-- Two options that jumps to sign in and sign up pages respectively -->
-                            <a href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
-                            <a href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                            <a class="pulse-grow-on-hover" href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                            <a class="pulse-grow-on-hover" href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                         </div>
                     </a>
                     <!-- break (New line) -->
@@ -160,4 +161,5 @@
 
 
 <!-- End of index home page -->
+
 </html>

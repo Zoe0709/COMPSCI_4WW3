@@ -21,7 +21,7 @@
 
     <!-- Referencing the css file and library -->
     <link rel="stylesheet" type="text/css" href="./styles/results_sample.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <!-- google material icons for the navigation bar and footer -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -81,12 +81,12 @@
 
                 <!-- the Search anchor element -->
                 <li>
-                    <a class='phone-navl' href='./search.html' style="color: #4A403A;"><i class='material-icons sm-18'>search</i>Search</a>
+                    <a class='phone-navl pulse-grow-on-hover' href='./search.html' style="color: #4A403A;"><i class='material-icons sm-18'>search</i>Search</a>
                 </li>
 
                 <!-- the Home anchor element -->
                 <li>
-                    <a class='phone-navr' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
+                    <a class='phone-navr pulse-grow-on-hover' href='./index.html'><i class='material-icons sm-18'>home</i>Home</a>
                 </li>
 
             </ul>
@@ -98,18 +98,18 @@
 
                 <!-- the Submit anchor element -->
                 <li>
-                    <a class='phone-navl' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
+                    <a class='phone-navl pulse-grow-on-hover' href='./submission.html'><i class='material-icons sm-18'>add</i>Submit</a>
                 </li>
 
                 <!-- the User anchor element -->
                 <li>
                     <!-- A dropbox shows up by clicking -->
-                    <a class='phone-navr dropdown dropbtn' onclick="dropthebox()">
+                    <a class='phone-navr dropdown dropbtn pulse-grow-on-hover' onclick="dropthebox()">
                         <i class='material-icons sm-18'>account_circle</i>Account
                         <div class="dropdown-content" id="userdropdown">
                             <!-- Two options that jumps to sign in and sign up pages respectively -->
-                            <a href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
-                            <a href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
+                            <a class="pulse-grow-on-hover" href='./sign_in.html'><i class='material-icons sm-18'>login</i>Sign In</a>
+                            <a class="pulse-grow-on-hover" href='./registration.html'><i class='material-icons sm-18'>assignment</i>Sign Up</a>
                         </div>
                     </a>
                     <!-- break (New line) -->
@@ -135,7 +135,7 @@
             <div id="map"></div>
             <!-- Load the Maps JavaScript API -->
             <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARy_62bIYsiS3Ossb4DN8C-Dso2qq0RM0&callback=initMap"></script>
-            
+
             <div class='result-container'>
 
                 <!-- Show the results in a tabular format -->
@@ -152,7 +152,9 @@
                     <!-- The first row of the table (except the header row) -->
                     <tr>
                         <!-- Grid for museum outlook of the first row including a link to the individual sample page -->
-                        <td><a href='./individual_sample.html'><img src="./img/aga_khan.jpeg"></a></td>
+                        <td>
+                            <a href='./individual_sample.html'><img src="./img/aga_khan.jpeg"></a>
+                        </td>
                         <!-- Grid for museum name of the first row -->
                         <td><a href='./individual_sample.html'>Aga Khan Museum</a></td>
                         <!-- Grid for rating of the first row -->
@@ -163,7 +165,9 @@
 
                     <!-- The second row of the table -->
                     <tr>
-                        <td><a href='./individual_sample.html'><img src="./img/bata.jpeg"></a></td>
+                        <td>
+                            <a href='./individual_sample.html'><img src="./img/bata.jpeg"></a>
+                        </td>
                         <td><a href='./individual_sample.html'>Bata Shoe Museum</a></td>
                         <td><a href='./individual_sample.html'>4.3<i class="material-icons" style="font-size:22px;">star</i></a></td>
                         <td><a href='./individual_sample.html'>327 Bloor St W, Toronto, Ontario<p>M5S 1W7</p></a></td>
@@ -171,7 +175,9 @@
 
                     <!-- The third row of the table -->
                     <tr>
-                        <td><a href='./individual_sample.html'><img src="./img/canoe.jpeg"></a></td>
+                        <td>
+                            <a href='./individual_sample.html'><img src="./img/canoe.jpeg"></a>
+                        </td>
                         <td><a href='./individual_sample.html'>Canadian Canoe Museum</a></td>
                         <td><a href='./individual_sample.html'>4.1<i class="material-icons" style="font-size:22px;">star</i></a></td>
                         <td><a href='./individual_sample.html'>910 Monaghan Rd, Peterborough, Ontario<p>K9J 5K4</p></a></td>
@@ -194,4 +200,5 @@
 </footer>
 
 <!-- End of individial sample page -->
+
 </html>
