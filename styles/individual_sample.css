@@ -15,10 +15,26 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
     /* background for the body */
-    background: #2B2B28;
+    /* #2B2B28   */
+    background: linear-gradient(45deg, #2B2B28, #2B2B28, #293B5F, #334257, #47597E, #476072, #548CA8);
+    background-size: 600% 100%;
+    animation: gradient 16s linear infinite;
+    animation-direction: alternate;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+
+/* Background gradient color changing */
+
+@keyframes gradient {
+    0% {
+        background-position: 0%
+    }
+    100% {
+        background-position: 100%
+    }
 }
 
 
@@ -59,17 +75,22 @@ th {
     padding: 10px;
 }
 
+
 /* Remove vertical table borders */
+
 td,
 th {
     border-left: none !important;
     border-right: none !important;
 }
 
+
 /* Remove top border of the first row */
+
 th {
     border-top: none !important;
 }
+
 
 /* Set the width of table cells in the last column */
 
@@ -114,7 +135,6 @@ table.center {
     margin-top: auto;
 }
 
-
 .myrating:hover {
     color: #FBFF00;
     animation-name: flip-in-y;
@@ -142,7 +162,8 @@ table.center {
         transform: perspective(400px) scale(1);
         animation-timing-function: ease-in;
     }
-} 
+}
+
 
 /* 
  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
@@ -163,7 +184,6 @@ img {
     margin-right: auto;
     width: 80%;
 }
-
 
 
 /* 
@@ -373,12 +393,14 @@ nav a#dropdown {
         transform: scale(1.1);
     }
 }
+
 @keyframes pulse-grow-on-hover {
     to {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
     }
 }
+
 .pulse-grow-on-hover {
     display: inline-block;
     vertical-align: middle;
@@ -386,7 +408,10 @@ nav a#dropdown {
     transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
-.pulse-grow-on-hover:hover, .pulse-grow-on-hover:focus, .pulse-grow-on-hover:active {
+
+.pulse-grow-on-hover:hover,
+.pulse-grow-on-hover:focus,
+.pulse-grow-on-hover:active {
     -webkit-animation-name: pulse-grow-on-hover;
     animation-name: pulse-grow-on-hover;
     -webkit-animation-duration: 0.3s;
@@ -617,12 +642,14 @@ footer {
 
 
 /* Scrolling the text in footer */
+
 .scrolling {
-    height: 17px;  
+    height: 17px;
     overflow: hidden;
     position: relative;
     padding-bottom: .5em;
 }
+
 .scrolling p {
     color: white;
     position: absolute;
@@ -632,33 +659,50 @@ footer {
     line-height: 17px;
     text-align: center;
     /* Starting position */
-    -moz-transform:translateX(100%);
-    -webkit-transform:translateX(100%);    
-    transform:translateX(100%);
-    /* Apply animation to this element */  
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
     -moz-animation: scrolling 20s linear infinite;
     -webkit-animation: scrolling 20s linear infinite;
     animation: scrolling 20s linear infinite;
 }
+
+
 /* Move it (define the animation) */
+
 @-moz-keyframes scrolling {
-    0%   { -moz-transform: translateX(100%); }
-    100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes scrolling {
-    0%   { -webkit-transform: translateX(100%); }
-    100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes scrolling {
-    0%   { 
-        -moz-transform: translateX(100%); /* Firefox bug fix */
-        -webkit-transform: translateX(100%); /* Firefox bug fix */
-        transform: translateX(100%);       
+    0% {
+        -moz-transform: translateX(100%);
     }
-    100% { 
-        -moz-transform: translateX(-100%); /* Firefox bug fix */
-        -webkit-transform: translateX(-100%); /* Firefox bug fix */
-        transform: translateX(-100%); 
+    100% {
+        -moz-transform: translateX(-100%);
+    }
+}
+
+@-webkit-keyframes scrolling {
+    0% {
+        -webkit-transform: translateX(100%);
+    }
+    100% {
+        -webkit-transform: translateX(-100%);
+    }
+}
+
+@keyframes scrolling {
+    0% {
+        -moz-transform: translateX(100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(100%);
+        /* Firefox bug fix */
+        transform: translateX(100%);
+    }
+    100% {
+        -moz-transform: translateX(-100%);
+        /* Firefox bug fix */
+        -webkit-transform: translateX(-100%);
+        /* Firefox bug fix */
+        transform: translateX(-100%);
     }
 }
 
@@ -685,7 +729,7 @@ footer {
     nav {
         display: none;
         position: fixed;
-        z-index: 10000;        
+        z-index: 10000;
     }
     /* display the class called phone-menue */
     .phone-menue {
@@ -732,7 +776,7 @@ footer {
 
 .dropdown .dropbtn {
     cursor: pointer;
-    font-size: 16px;  
+    font-size: 16px;
     border: none;
     outline: none;
     color: white;
@@ -750,7 +794,7 @@ footer {
     position: absolute;
     background-color: #4A403A;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -763,7 +807,9 @@ footer {
     text-align: left;
 }
 
+
 /* Change text color when hovering */
+
 .dropdown-content a:hover {
     color: #A45D5D;
 }
