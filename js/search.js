@@ -1,9 +1,8 @@
 // Gets user's current location, if supported by their browser
 function getLocation() {
     if (navigator.geolocation) {
-        // Get current position, send it to the getResults function
+        // Get current position, and call showPosition function
         navigator.geolocation.getCurrentPosition(showPosition);
-        //window.location.href = "./results_sample.html";
     } else {
         // If not supported by browser, send an alert to their screen
         alert('Geolocation is not supported.');
@@ -12,24 +11,24 @@ function getLocation() {
 
 // Handles the position retrieved in getLocation()
 function showPosition(position) {
-    // Get long and latitude input boxes from html
+    // Get longitude and latitude input boxes from html
     var long = document.getElementById('longitude');
     var lat = document.getElementById('latitude');
 
     // Change values in long/lat boxes to the position
-    // retrieved in getLocation()
+    // retrieved in getLocation(), accurate to 3 decimal places
     long.value = Math.round(position.coords.longitude * 1000) / 1000;
     lat.value = Math.round(position.coords.latitude * 1000) / 1000;
 }
 
 
-//**********needs to valide the values of longitude and latitude */
+// if the search button in the form that search BY LOCATION is clicked
 function submitPosition() {
     valid_form = true;
     orignalbgcolor = "white";
     bgcolor = "#b38f8f";
 
-    // set the colors for the longitude and latitude to default
+    // set the colors for the musName to default
     // just in case it was clicked before
     var musName = document.getElementById('musName');
     musName.style.backgroundColor = orignalbgcolor;
@@ -58,12 +57,13 @@ function submitPosition() {
         lat.style.backgroundColor = orignalbgcolor;
     }
 
+    // if the entered values are valid, then the user can move to the results_sample page
     if (valid_form) {
         window.location.href = "./results_sample.html";
     }
 }
 
-
+// if the search button in the form that searches BY NAME is clicked
 function submitName() {
     orignalbgcolor = "white";
     bgcolor = "#b38f8f";
@@ -78,6 +78,7 @@ function submitName() {
     // Get musName input box from html
     var musName = document.getElementById('musName');
 
+    // check if musName contains a correct name 
     if (!(validateName(musName.value))) {
         window.alert("Please insert a correct name. A museum name can only contain letters, white space, or numbers.");
         musName.style.backgroundColor = bgcolor;
@@ -85,12 +86,20 @@ function submitName() {
     } else {
         musName.style.backgroundColor = orignalbgcolor;
     }
+
+    // if the function didn't return,
+    // which means that the museum name is valid, 
+    // move the user to the results_sample page
     window.location.href = "./results_sample.html";
 
 }
 
+// The function that validates a given name
 function validateName(x) {
+    // the regular expression to be used to validate the name
     rexp = /^[a-zA-Z\s0-9]*$/;
+
+    // if the name is indeed valid, return true
     if (rexp.test(x) && musName.value.length != 0) {
         return true;
     } else {
@@ -106,7 +115,7 @@ function dropthebox() {
 // Close the dropdown if the user clicks outside of it
 window.onclick = function(e) {
     if (!e.target.matches('.dropbtn')) {
-    var myDropdown = document.getElementById("myDropdown");
+        var myDropdown = document.getElementById("myDropdown");
         if (myDropdown.classList.contains('show')) {
             myDropdown.classList.remove('show');
         }

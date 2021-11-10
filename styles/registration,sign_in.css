@@ -281,7 +281,7 @@ input:required {
     width: 200px;
     color: #2B2B28;
     margin-right: 10px;
-    font-size: 19px;
+    font-size: 18px;
 }
 
 .wrapper .form .inputfield .input {
@@ -289,7 +289,7 @@ input:required {
     outline: none;
     border: 1px solid #A45D5D;
     background: white;
-    font-size: 19px;
+    font-size: 16px;
     padding: 8px 10px;
     border-radius: 3px;
     transition: all 0.3s ease;
