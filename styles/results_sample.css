@@ -542,3 +542,7 @@ footer {
 .show {
     display: block;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 3s;
+}

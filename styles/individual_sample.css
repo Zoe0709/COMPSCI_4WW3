@@ -817,3 +817,11 @@ footer {
 .show {
     display: block;
 }
+
+.animate__animated.animate__fadeIn {
+    --animate-duration: 1s;
+}
+
+:root {
+    --animate-delay: 0.1s;
+}
