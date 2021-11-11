@@ -15,7 +15,6 @@ body {
     font-family: 'Roboto', Helvetica, sans-serif;
     margin: 0;
     /* background for the body */
-    /* #2B2B28   */
     background: linear-gradient(45deg, #2B2B28, #2B2B28, #293B5F, #334257, #47597E, #476072, #548CA8);
     background-size: 600% 100%;
     animation: gradient 16s linear infinite;
@@ -30,10 +29,10 @@ body {
 
 @keyframes gradient {
     0% {
-        background-position: 0%
+        background-position: 0%;
     }
     100% {
-        background-position: 100%
+        background-position: 100%;
     }
 }
 
@@ -135,12 +134,16 @@ table.center {
     margin-top: auto;
 }
 
+
+/* Add flip animation to rating stars. */
+/* Color changed and animation applied when hovering. */
 .myrating:hover {
     color: #FBFF00;
     animation-name: flip-in-y;
     animation-duration: 2s;
 }
 
+/* Define the flip keyframes animation */
 @keyframes flip-in-y {
     0% {
         transform: perspective(400px) rotateY(0);
@@ -669,7 +672,7 @@ footer {
 }
 
 
-/* Move it (define the animation) */
+/* Define the animation */
 
 @-moz-keyframes scrolling {
     0% {
