@@ -46,8 +46,6 @@ function submitPosition() {
         long.style.backgroundColor = orignalbgcolor;
     }
 
-
-
     // validate latitude
     if ((lat.value.length == 0) || (!lat.checkValidity())) {
         window.alert("Please insert a correct latitude accurate to 3 decimal places.");
@@ -83,6 +81,10 @@ function submitName() {
         window.alert("Please insert a correct name. A museum name can only contain letters, white space, or numbers.");
         musName.style.backgroundColor = bgcolor;
         return false;
+    } else if (!(ifOnlySpace(musName.value))) {
+        window.alert("White space only is not allowed.");
+        musName.style.backgroundColor = bgcolor;
+        return false;
     } else {
         musName.style.backgroundColor = orignalbgcolor;
     }
@@ -104,6 +106,17 @@ function validateName(x) {
         return true;
     } else {
         return false;
+    }
+}
+
+// The function that checks if input string only contains space
+function ifOnlySpace(x) {
+    // Use trim() to remove all whitespace from both sides of a string
+    if (x.trim().length == 0) {
+        return false;
+    }
+    else {
+       return true;
     }
 }
 
