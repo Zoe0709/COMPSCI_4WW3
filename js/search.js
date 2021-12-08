@@ -55,10 +55,10 @@ function submitPosition() {
         lat.style.backgroundColor = orignalbgcolor;
     }
 
-    // if the entered values are valid, then the user can move to the results_sample page
-    if (valid_form) {
-        window.location.href = "./results_sample.html";
-    }
+    // // if the entered values are valid, then the user can move to the results_sample page
+    // if (valid_form) {
+    //     window.location.href = "./results_sample.html";
+    // }
 }
 
 // if the search button in the form that searches BY NAME is clicked
@@ -92,7 +92,7 @@ function submitName() {
     // if the function didn't return,
     // which means that the museum name is valid, 
     // move the user to the results_sample page
-    window.location.href = "./results_sample.html";
+    // window.location.href = "./results_sample.html";
 
 }
 
