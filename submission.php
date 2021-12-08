@@ -12,7 +12,7 @@
 
             <!-- The form that will take the information about the Museum
             (A temporary URI to submit the form information ) -->
-            <form class="wrapper animate__animated animate__fadeIn" onsubmit="return validate(this)" method="post" action="php/submission_val.php">
+            <form class="wrapper animate__animated animate__fadeIn" onsubmit="return validate(this)" method="post" action="submission_val.php">
 
                 <!-- The form is divided into 2 parts -->
                 <div class="form">

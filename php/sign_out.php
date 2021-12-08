@@ -1,14 +1,15 @@
 <?php
 
-    // First we start the session as normal
+    // Start/continue the session
     session_start();
 
-    // Now we want to discard the previous session, we can do so by first unsetting all the values
+    // unset all the values in the session
     session_unset();
 
-    // Now we destroy the session, invalidating the user's cookies for this login
+    // Destroy the session
     session_destroy();
 
+    // move the user to the index page
     header("location: ../index.php");
     exit;
 ?>

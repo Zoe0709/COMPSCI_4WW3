@@ -13,10 +13,10 @@
         $musId = $_GET['id'];
         // Empty result check
         if(empty($musId)){
-            echo '<p class="notFound">Sorry, museum table is empty.</p>'; 
+            echo '<p class="notFound">Sorry, museum table is empty.</p>';
             require "php/footer.inc.php";
             exit();
-        }    
+        }
         // If result is not empty
         else{
             // Query to get data from database
@@ -48,7 +48,7 @@
                     // Fetch values
                     while ($row = $stmt -> fetch(PDO::FETCH_OBJ)) {
                         // Get the museum reviews
-                        $sql_review = "SELECT re_id, re_rate, re_desp, re_username FROM reviews 
+                        $sql_review = "SELECT re_id, re_rate, re_desp, re_username FROM reviews
                                 INNER JOIN museums ON reviews.mus_id = museums.mus_id
                                 INNER JOIN users ON reviews.user_id = users.user_id
                                 WHERE museums.mus_id = ? ORDER BY reviews.re_rate DESC";
@@ -88,7 +88,7 @@
 
 <!-- Main content of the page -->
 
-    <main class='main-section'>
+<main class='main-section'>
         <div class='content'>
 
             <!-- Header that indicates content of this page -->
@@ -111,16 +111,16 @@
                         zoom: 14,
                         center: theMus,
                     });
-                    // Create a marker positioned at the museum 
+                    // Create a marker positioned at the museum
                     var marker = new google.maps.Marker({
                         position: theMus,
                         map: map,
                     });
                     // Museum info window content
-                    var mus_info = '<div id="content">' + 
+                    var mus_info = '<div id="content">' +
                         '<h1 id="firstHeading" class="firstHeading"><?php echo $musName; ?></h1>' +
-                        '<div id="bodyContent">' + 
-                        '<p>Rated <?php echo $avgRate; ?><i class="material-icons" style="font-size:16px;">star</i></p>' + 
+                        '<div id="bodyContent">' +
+                        '<p>Rated <?php echo $avgRate; ?><i class="material-icons" style="font-size:16px;">star</i></p>' +
                         '</div>' +
                         '</div>'
                     ;
@@ -154,9 +154,9 @@
                     <!-- Brief description of museum -->
                     <p itemprop="description" class='subheading-t'>Description: </p>
                     <p itemprop="description" class='subheading-p'>
-                        <?php if (!empty($musDesp)) 
-                                echo $musDesp; 
-                            else 
+                        <?php if (!empty($musDesp))
+                                echo $musDesp;
+                            else
                                 echo 'N/A';
                         ?>
                     </p>

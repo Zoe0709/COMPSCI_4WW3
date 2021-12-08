@@ -15,7 +15,7 @@ if (isset($_POST['location-submit'])) {
     // Empty search field check
     // If empty
     if (empty($latitude) || empty($longitude)) {
-        header("Location: ../search.php?error=emptyfield");
+        header("Location: ../../search.php?error=emptyfield");
         exit();
     }
     // If not empty
@@ -23,7 +23,7 @@ if (isset($_POST['location-submit'])) {
         // Search between +- 0.1 latitude and longitude
         $sql = "SELECT mus_id FROM museums WHERE lat BETWEEN ? AND ? AND lon BETWEEN ? AND ?";
         if(!($stmt = $conn -> prepare($sql))){
-            header("Location: ../search.php?error=sqlerror");
+            header("Location: ../../search.php?error=sqlerror");
             exit();
         }
         else {
@@ -46,7 +46,7 @@ else if (isset($_POST['name-submit'])) {
     // Empty search field check
     // If empty
     if (empty($musName)) {
-        header("Location: ../search.php?error=emptyfield");
+        header("Location: ../../search.php?error=emptyfield");
         exit();
     }    
     // If not empty
@@ -54,7 +54,7 @@ else if (isset($_POST['name-submit'])) {
         // Get all museum ids that the corresponding museum name is similar to user input
         $sql = "SELECT mus_id FROM museums WHERE mus_name LIKE ?";
         if(!($stmt = $conn -> prepare($sql))){
-            header("Location: ../search.php?error=sqlerror");
+            header("Location: ../../search.php?error=sqlerror");
             exit();
         }
         else {
@@ -83,7 +83,7 @@ else if (isset($_POST['rating-submit'])) {
     // Empty search field check
     // If empty
     if (empty($musRating)) {
-        header("Location: ../search.php?error=emptyfield");
+        header("Location: ../../search.php?error=emptyfield");
         exit();
     }    
     // If not empty
@@ -91,7 +91,7 @@ else if (isset($_POST['rating-submit'])) {
         // Search museum ids that the corresponding museum rating is in the certain range
         $sql = "SELECT mus_id FROM museums WHERE avg_rate < ? AND avg_rate >= ?";
         if (!($stmt = $conn -> prepare($sql))) {
-            header("Location: ../search.php?error=sqlerror");
+            header("Location: ../../search.php?error=sqlerror");
             exit();
         }
         else {
@@ -124,12 +124,12 @@ function fetchResult($stmt) {
         }
         // Remove the last comma
         $musIds = rtrim($musIds, ", ");
-        header("Location: ../results_sample.php?get-results&result=".$musIds);
+        header("Location: ../../results_sample.php?get-results&result=".$musIds);
         exit();
     }
     // If no museum found with user input
     else {
-        header("Location: ../search.php?error=nothingfound");
+        header("Location: ../../search.php?error=nothingfound");
         exit();
     }
 }
