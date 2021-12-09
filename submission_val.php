@@ -1,21 +1,17 @@
 <?php
 
-    // request has to be post to submit a new page
+    // request has to be post to submit a new page 
     if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         // The passed post variables
         $musName = $_POST['musName'];
 
-        $musCountry = $_POST['musCountry'];
-        $musCity = $_POST['musCity'];
-        $musPostal = $_POST['musPostal'];
+        $musAddr = $_POST['musAddr'];
         $musDesc = $_POST['musDesc'];
         $longitude = $_POST['longitude'];
         $latitude = $_POST['latitude'];
 
-        // The passed image to be stored in s3 bucket
-        $musImage = $_FILES['musImage']['name'];
-        $temp_file = $_FILES['musImage']['name'];
+
 
         // initial avg rate is 0
         $avgr = 0;
@@ -99,58 +95,35 @@
                     exit();
                 }
 
-                // prepare the sql command to insert a new museum into the database
-                $sql = "INSERT INTO museums (mus_name, lat, lon, avg_rate, mus_desp) VALUES (:mname, :lati, :long, :avg_rate, :mdesc)";
-                $stmt = $dbh->prepare($sql);
-
-                $val = false;
-
-                if ($stmt) {
-                    // bind the values to avoid malcious activities
-                    $stmt->bindValue(":mname", $musName);
-                    $stmt->bindValue(":lati", $latitude);
-                    $stmt->bindValue(":long", $longitude);
-                    $stmt->bindValue(":avg_rate", $avgr);
-                    $stmt->bindValue(":mdesc", $musDesc);
-                    if ($stmt->execute()){
-
-                        // use s3 bucket to store the files
-                        require 'vendor/autoload.php';
+                // The passed post variables
+                $_SESSION['musName'] = $musName;
+                $_SESSION['musAddr'] = $musAddr;
+                $_SESSION['musDesc'] = $musDesc;
 
 
-                        $s3 = new Aws\S3\S3Client([
-                            'region'  => 'us-east-2',
-                            'version' => 'latest',
-                            'credentials' => [
-                                'key'    => 'aaa',
-                                'secret' => 'bbb',
-                            ]
-                        ]);        
-
-                        $s3->putObject([
-                            array(
-                                'Bucket' => 'aaa',
-                                'Key'    => $musImage,
-                                'SourceFile' => $temp_file 
-
-                            )
-                        ]);
-
-                        // command was sucessful, and museum was inserted
-                        $val = true;
-                    } 
-                    // unable to execute the command
-                    else {
-                        echo "Something Went Wrong";
-                    }
                 
-                }
+                $_SESSION['longitude'] = $longitude;
+                $_SESSION['latitude'] = $latitude;
 
-                // unable to execute the command
-                else{
-                    echo "Something went wrong";
-                }                
+                // The passed image to be stored in s3 bucket
+                $_SESSION['imgfile'] = $_FILES['musImage']['name'];
+                $_SESSION['imgtemp'] = $_FILES['musImage']['tmp_name'];
 
+                // The passed video to be stored in s3 bucket
+                $_SESSION['vidfile'] = $_FILES['musVid']['name'];
+                $_SESSION['vidtemp'] = $_FILES['musVid']['tmp_name'];
+
+
+                // a php script that will insert the data including the image into the data base
+                // please note that this script resides on the server as it contains the private keys
+                include 'php/inc/s3bucketInsert.php';
+
+                // successful insertion
+                $val = true;
+
+
+
+                
 
             }
             // close the connection

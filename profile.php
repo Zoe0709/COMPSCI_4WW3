@@ -24,12 +24,15 @@
                         Profile
                     </div>
 
-                    <!-- **REQUIRED** The username of the user **REQUIRED** -->
+                    <div class="inputfield animate__animated animate__fadeIn animate__delay-1s">
+                        <label for="pass"> <?php echo "userId:".$_SESSION['userId']; ?>   </label>
+                    </div>
+
                     <div class="inputfield animate__animated animate__fadeIn animate__delay-2s">
                         <label for="uname"> <?php echo "username:".$_SESSION['username']; ?></label>
                     </div>
 
-                    <!-- **REQUIRED** The password of the user **REQUIRED** -->
+
                     <div class="inputfield animate__animated animate__fadeIn animate__delay-3s">
                         <label for="pass"> <?php echo "Email:".$_SESSION['email']; ?>   </label>
                     </div>

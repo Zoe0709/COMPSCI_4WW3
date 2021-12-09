@@ -12,6 +12,7 @@ if (isset($_POST['location-submit'])) {
     $maxLong = $longitude + 0.1;
     $minLong = $longitude - 0.1;
 
+    // Appropriate validation:
     // Empty search field check
     // If empty
     if (empty($latitude) || empty($longitude)) {

@@ -1,7 +1,8 @@
 <?php
 
-if (isset($_POST['review-submit'])) {
-    // Database connection
+// Request method must be post
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Database connection, please note this file resides on the server only
     require '../db_connection.php';
     session_start();
     // Get values
@@ -12,11 +13,30 @@ if (isset($_POST['review-submit'])) {
     $username = $_SESSION['username'];
     $userId = $_SESSION['userId'];
 
-    // Check if empty
+
+
+
+    // check if the user is logged in
+    if (isset($_SESSION['signedin'])) {
+        // if the user is not logged in, then notify them
+        if($_SESSION['signedin'] != true){
+            header("location: ../../notify.php?head=Log In Required&body=Only logged in users can submit reviews.");
+            exit();
+        }
+            
+    }
+    // if the user is not logged in, then notify them
+    else{
+        header("location: ../../notify.php?head=Log In Required&body=Only logged in users can submit reviews.");
+        exit();
+
+    }
+
+    // data validation
     if (empty($reviewRating) || empty($musId)) {
         echo '<h2 class="error">Please fill all the required field.</h2>';
     }       
-    else if (empty($username) || empty($userId)) {
+    else if (empty($username)) {
         echo '<h2 class="error">Please log in to continue.</h2>';
     }     
     // If not empty
@@ -37,36 +57,18 @@ if (isset($_POST['review-submit'])) {
             // Check if reviews from the same user exist
             if ($stmt -> rowCount() > 0) {
                 // If yes, then the user has already reviewed the this museum
-                echo '<h2 class="error">You\'ve already reviewed this museum.</h2>';
+                header("location: ../notify.php?head=Failed Review&body=You have already reviewed this museum.");
             }
             // No review found with museum id
             else {
                 // Save review to DB
                 $sql = "INSERT INTO reviews (mus_id, user_id, re_username, re_rate, re_desp) VALUES (?, ?, ?, ?, ?)";
                 $stmt = $conn -> prepare($sql);
-                if (!($stmt)) {
-                    echo '<h2 class="error">Sorry, something about DB went wrong.</h2>';
-                }
-                else {
-                    // Execute sql statement with positional parameters
-                    $stmt -> execute([$musId, $userId, $username, $reviewRating, $reviewDesp]);
-                    if ($stmt -> rowCount() > 0) {
-                        echo '<h2 class="error">Sorry, something about DB went wrong.</h2>';
-                    } else {
-                        // Review the museum successfully
-                        echo '<li class="result-table center animate__animated animate__fadeIn">
-                                <div itemscope itemtype="http://schema.org/Review">
-                                    <p>
-                                        <h2 itemprop="author">'.$reviewUsername.'</h2>
-                                        <h3 itemprop="reviewRating">Rating: '.$reviewRating.'<i class="material-icons">star</i></h3>
-                                    </p>
-                                    <div><h4 itemprop="reviewBody">'.$reviewDesp.'</h4></div>
-                                </div>
-                            </li>
-                            <!--Line between each review-->
-                            <hr>';
-                    }
-                }
+
+                // Execute sql statement with positional parameters to insert the data
+                $stmt -> execute([$musId, $userId, $username, $reviewRating, $reviewDesp]);
+                header("location: ../notify.php?head=Successful Review&body=Thank you for submitting a review.");
+            
             }
         }
     }

@@ -77,7 +77,6 @@
                     
                     // Close the connection
                     $conne->close();
-                    // exit if the user already exists in the database
                     exit();
                 }
 

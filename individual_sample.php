@@ -219,7 +219,7 @@
             </span> -->
 
             <!-- The form that will take the review information from the user -->
-            <form class="wrapper" name="review-form" id="myReview">
+            <form class="wrapper" name="review-form" id="myReview" method="post" action="php/inc/review.inc.php">
 
                 <div class="form">
                     <input value="" name="review-submit" hidden/>

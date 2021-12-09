@@ -27,7 +27,7 @@
                 $dbh = new PDO('mysql:host=localhost;dbname=proj_db', $username, $password);
 
                 // prepare the query to be executed to log in the user
-                $stmt = $dbh ->prepare("SELECT username,password,email FROM users WHERE username=:uname");
+                $stmt = $dbh ->prepare("SELECT user_id, username,password,email FROM users WHERE username=:uname");
 
 
 
@@ -41,6 +41,8 @@
                         if ($stmt->rowCount() == 1){
                             $row = $stmt->fetch();
                             if ($row){
+                                // retreive the data to set the session, incase the password is right
+                                $userid = $row["user_id"];
                                 $usname = $row["username"];
                                 $pass = $row["password"];
                                 $em = $row["email"];
@@ -51,6 +53,7 @@
                                     $_SESSION["signedin"] = true;
                                     $_SESSION["username"] = $usname;
                                     $_SESSION["email"] = $em;
+                                    $_SESSION["userId"] = $userid;
                                     // take the user to their profile page
                                     header("location: ../profile.php");
                                     
